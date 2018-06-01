@@ -1,0 +1,111 @@
+/******Class Padding*******
+$header_bg_color2: #23282d !default;
+
+*/
+	$var_space: 20px!default;//($var_space - 5px) ($var_space + 10px)
+	$rounded_corner:0;
+
+	$general_font:400 13px/1.75 'Open Sans', Helvetica, Arial, sans-serif !default;
+
+	$h1_font:400 30px/1.15 'Montserrat', Helvetica, Arial, sans-serif !default;
+	$h2_font:400 24px/1.75 'Montserrat', Helvetica, Arial, sans-serif !default;
+	$h3_font:600 22px/1.75 'Open Sans', Helvetica, Arial, sans-serif !default; // price
+	$h4_font:500 16px/1.75 'Montserrat', Helvetica, Arial, sans-serif !default;
+	$h5_font:500 14px/1.75 'Montserrat', Helvetica, Arial, sans-serif !default; //name
+	$h6_font:400 12px/1.35 'Montserrat',Helvetica, Arial, sans-serif !default ;
+
+	$home_title_font:italic 600 110px/1.35 'Montserrat',Helvetica, Arial, sans-serif !default ;
+	$title_font:500 20px/1.35 'Montserrat',Helvetica, Arial, sans-serif !default ;
+	$colorPrimary:#cccccc;//wd_member_role team
+
+/*=header==============*/
+$header_bg_color1: #fff !default;
+$header-top-font:500 120px/1.35 'Montserrat',Helvetica, Arial, sans-serif !default ;
+
+$header_bg_cart_color: #fff !default;
+
+$header_text_color1: #fefefe !default; //
+$header_text_color2: #aa00ff !default; //hover
+
+$header_line_color: #ffffff !default;
+
+/*=top menu==============*/
+$menu_bg_color: transparent !default;
+$menu_hover_bg_color: transparent !default;
+$dropmenu_bg_color: #ffffff !default;
+
+$menu_text_color: #ffffff !default; 
+$menu_hover_text_color: #aa00ff !default;
+$dropmenu_text_color:#424242!default;
+$dropmenu_text2_color:#757575 !default;// hover,active,title
+
+	$menu_font:400 14px/1.35 'Montserrat', Helvetica, Arial, sans-serif !default;
+	$dropmenu_font:500 15px/1.55 Lato, Helvetica, Arial, sans-serif!default;
+
+$dropmenu_line:#ebebeb;
+
+/*=body==============*/
+$main_bg_color: #ffffff !default;
+$main_bg2_color: #f9f9f9 !default;//bg best sellers
+$main_bg3_color: #f5f5f5 !default;//blog
+$main_bg4_color: #fff4f6 !default;//(pink faq)
+
+$main_title_color: #212121 !default;// h1 title fw
+$main_text_color: #757575 !default; //paging, 
+
+$main_text2_color: #959595 !default;// normal,input text fw
+$main_text3_color: #212121 !default;//title,price
+$main_text4_color: #aa00ff !default;//hover
+$main_text5_color: #ffffff !default;//
+$main_text6_color: #424242 !default;//name product
+
+
+$main_line_color: #dee2e5 !default;//line input,textarea fw
+$main_line2_color: #ebebeb !default;//line cart
+
+
+/*=footer==============*/
+$footer_bg_color: #000000 !default; //top
+$footer_bg2_color: #212121 !default;//bottom
+
+$footer_line_color: #616161 !default;
+
+$footer_text_color: #b7b7b7 !default;
+$footer_text2_color: #ffffff !default; // title
+
+/*---- footer 08 ----*/
+$footer_text4_color: #a3a3a3 !default; 
+
+/*=button==============*/
+$btn_hover: #aa00ff !default;
+
+$btn1_bg_color: #212121 !default; //fw pricing table
+$btn1_text_color: #ffffff !default;
+$btn1_line_color: #212121 !default;
+$btn1_font:600 14px/1.35 Montserrat, Helvetica, Arial, sans-serif !default;
+
+$btn2_bg_color: #aa00ff !default;//hover
+$btn2_text_color: #ffffff !default;
+$btn2_line_color: #aa00ff !default;
+$btn2_font:600 14px/1.35 Montserrat, Helvetica, Arial, sans-serif !default;
+
+$btn4_bg_color: #000000 !default;// btn 2line
+$btn4_text_color: #ffffff !default;
+$btn4_line_color: #000000 !default;
+$btn4_font:600 14px/1.35 Montserrat, Helvetica, Arial, sans-serif !default;
+
+$btn5_bg_color: transparent !default;// tag
+$btn5_text_color: #757575 !default;
+$btn5_line_color: #e7e7e7 !default;
+$btn5_font:500 13px/1.35 Open Sans, Helvetica, Arial, sans-serif !default;
+
+h1{font:$h1_font; color:$main_title_color;}
+h2{font:$h2_font; color:$main_title_color; margin:0 0 10px;}
+h3{font:$h3_font; color:$main_title_color;}
+h4{font:$h4_font; color:$main_title_color;}
+h5{font:$h5_font; color:$main_title_color;}
+h6{font:$h6_font; color:$main_title_color;}
+
+//#bdbdbd-->darken($main_text5_color,20%)
+//#e0e0e0-->darken($main_line2_color,10%)
+//#424242 -->lighten($btn3_line_color,20%)

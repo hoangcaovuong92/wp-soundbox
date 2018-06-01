@@ -1,0 +1,31 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* ---- isotope ---- */
+
+.isotope {
+  max-width: 1170px;
+}
+
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .item ---- */
+
+.item {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.item.width-1 { width: 585px; }
+.item.width-2 { width: 285px; }
+.item.width-3 { width: 300px; }
+.item.height-1 { height: 510px; }
+.item.height-2 { height: 250px; }

@@ -1,0 +1,218 @@
+
+
+/**
+ * 8.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+@media (min-width: 1069px) {
+
+.coming-soon .content-coming > div > .wpb_wrapper{ width:60%;}
+	
+}
+
+/* Collapse oversized image and pulled images after iPad breakpoint. */
+@media (max-width: 767px) {
+	/*mobile menu*/
+
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .col-sm-19, .col-sm-20, .col-sm-21, .col-sm-22, .col-sm-23, .col-sm-24,.woocommerce .products.grid > .product{ width:100%; }
+	.wd-comment-form #wd-comments .wd-comment-download-left{ width:100%;}
+	.wd-related-wrapper .wd-related-product > div{
+		width:50%;
+	}
+	.main-content{
+		padding:15px 15px 0;
+		overflow: hidden;
+	}
+	.wpb_text_column.vc_custom_1475469072695{ padding-right:0!important;}
+	/*=BlogSmallImage=================================*/
+	.content_blog .small_image{
+		> div{ padding:0;}
+		.item_header{ width:100%; margin:0 0 $var_space!important;
+			
+		}
+		.item_content{ overflow:visible; clear:left; padding: 0 ($var_space + 10px) ($var_space + 10px);}
+		.conten_item_quote{ padding:($var_space + 10px);}
+	}
+
+	.edd_cart_item_image{ display:none;}
+	#edd_checkout_cart .edd_checkout_cart_item_title{ padding-left:0;}
+	.edd_download_columns_0 .edd_download, .edd_download_columns_3 .edd_download,
+	.wd-related-wrapper .wd-related-slider > div,
+	.wd-comment-form #wd-comments #respond #commentform .comment-author-wrapper .col,
+	.recent_blogs_horizontal_container.special ul li .special_container_blog > a{
+		width:100%!important;
+	}
+	.home .title_gradient{
+		font-size:90px!important;
+	}
+	.site-main .container-porfolio-slider .owl-controls .owl-nav{
+		 > div{ background:transparent!important;}
+	}
+	.wd-comment-form ol.wd-commentlist .comment .comment-text{
+		padding:25px;
+	}
+	.wd-comment-form ol.wd-commentlist ul.children{
+		padding-left:0;
+	}
+}/*(max-width: 767px)*/
+
+@media (max-width: 643px) {
+	.woocommerce div.product #reviews{
+		#comments,.wd-comment-form{
+			width:100%; padding-right:0;
+		}
+		.wd-comment-form{ padding-top:$var_space;}
+	}
+}/*max-width: 643px*/
+
+/* Mobile devices */
+@media (max-width: 600px) {
+	#wpadminbar{
+		top:-46px;
+	}
+}
+@media (max-width: 500px) {
+	.wd-content-download .wd-content-download-right .wd-content-download-item-after {
+		.download_container_video, .download_container_audio{
+			position:relative;
+		}
+	}
+	.wd-content-download .wd-content-download-right .wd-content-download-item-after .edd_purchase_submit_wrapper{
+		padding-left:0;
+	}
+	a.download_icon_audio,
+	a.download_icon_pause,
+	a.download_icon_video,
+	a.download_icon_image,
+	a.price_option{ min-width:45px!important;}
+	.wd-content_item_quote a.readmore_link{
+		min-width:150px;
+		padding-left:5px;
+		padding-right:5px;
+		text-align:center;
+	}
+	.site-main .container-porfolio-slider .owl-controls .owl-nav,
+	.site-main .wd-related-wrapper .related_control{
+		top:10%!important;
+	}
+	.container-porfolio-slider .owl-controls .owl-nav a.prev:before, .wd-related-wrapper .related_control a.prev:before, .container-porfolio-slider .owl-controls .owl-nav a.owl-prev:before, .wd-related-wrapper .related_control a.owl-prev:before, .container-porfolio-slider .owl-controls .owl-nav > div.prev:before, .wd-related-wrapper .related_control > div.prev:before, .container-porfolio-slider .owl-controls .owl-nav > div.owl-prev:before, .wd-related-wrapper .related_control > div.owl-prev:before{ left:0!important;}
+	.container-porfolio-slider .owl-controls .owl-nav a.next:before, .wd-related-wrapper .related_control a.next:before, .container-porfolio-slider .owl-controls .owl-nav a.owl-next:before, .wd-related-wrapper .related_control a.owl-next:before, .container-porfolio-slider .owl-controls .owl-nav > div.next:before, .wd-related-wrapper .related_control > div.next:before, .container-porfolio-slider .owl-controls .owl-nav > div.owl-next:before, .wd-related-wrapper .related_control > div.owl-next:before{ right:0!important;}
+}
+
+@media (max-width: 959px){
+	.wd-team-member .wd_member_info .wd-member-content{display:none; }
+}
+
+/*=768 - 1024==================================================*/
+	@media (max-width: 1024px) {
+		/*home*/
+		.recent_blogs_horizontal_container.special ul li .special_container_blog .rb_title{
+			h3{
+				margin-top:0;
+			}
+		} 
+		
+	}
+
+	@media (min-width: 768px) and (max-width: 1024px){
+	/*home*/
+		.wd-testimonial_container .wd-testimonial_title h3{ font-size:80px;}
+		.wd-team-member.style-1 .wd_member_info .wd_member_info--content{
+			padding:0;
+			.wd-member-content{
+				display:none;
+			}
+		}
+		
+		
+	}/*768 and 1024*/
+	
+	@media (max-width: 767px) {
+		.title_dot, .title_dot_white{ font-size:14px!important;
+			&:after,&:before{ font-size:40px!important}
+		}
+		.title_gradient{
+			font-size:40px!important
+		}
+		/*home*/
+		.wd-testimonial_container .wd-testimonial_title h3{ font-size:32px;}
+		.edd_downloads_list .edd_download.first_big_one,
+		.edd_downloads_list .download_container_right,
+		.edd_downloads_list .download_container_right .edd_download,
+		.edd_download_columns_4 .edd_download,
+		.recent_blogs_horizontal_container.special ul li,
+		.testimonial_tab_container .testimonial_right_tab
+		{
+			width:100%!important;
+		}
+		.wd-testimonial_container.wd-style-slider .wd-avatar{
+			margin-right:$var_space/2;
+			/*width:95%;
+			margin-right:0;
+			margin-bottom:$var_space*2;*/
+			&:before{ border:0 none;}
+		}
+		.home .wd-testimonial_container .owl-item .wd-conent-testimonial{ @include cut_height(100px);}
+		.vc_custom_heading {
+			&.title_dot:after, &.title_dot_white:after{ padding:0 ;}
+			&.title_dot:before, &.title_dot_white:before{ padding-right: 0;}
+		}
+		.testimonial_tab_container .testimonial_right_tab, .wd-testimonial_container .wd-testimonial .wd-info-testimonial{
+			margin-top:$var_space;
+			padding:$var_space;
+		}
+		.wd-info-testimonial{/*width:95%;*/}
+		.wd-team-member.style-7 { width:95%;
+			margin-left:0 !important;
+			margin-right:0 !important;
+		}
+		.recent_blogs_horizontal_container.special ul li.rb_item:first-child .special_container_blog{
+			margin-right:0;
+		}
+		.wd-search-post .wd-click-popup-search{
+			&:before{ content:""}
+		}
+		a.header_cart{ font-size:0; }
+		.feature_tab_left,
+		.testimonial_tab_container .testimonial_tab_left{
+			width:100%;
+			margin-right:0;
+			padding-right:0;
+		}
+		.error404 .wd-error-404{
+			padding-top:40px;
+			.wd-page-header h1.wd-page-title{	font-size:150px;}
+			a.button{ font-size:12px;}
+		} 
+	}
+
+@media (max-width:1024px){
+	.wd-comment-form{
+		#wd-comments{
+			padding-right:0;
+			width:100%;
+		}
+		#respond {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: 768px)
+{
+	
+}/*min 768*/

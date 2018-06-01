@@ -1,0 +1,216 @@
+@media (min-width: 990px) {
+	.home .main-slider,
+	.page-id-1613 .main-slider { margin-top:-238px;}
+	header.header{ min-height:240px}
+}
+
+.home {
+	header.header{ padding:0;}
+	.wd-header-menu{border-bottom:0 none;}
+	.edd_download_inner{
+		.edd_download_title{ float:left;}
+		.edd_download_title.title2{ float:right; padding-top:0!important;margin-bottom:0; color:$main_text4_color;}
+		div[itemprop="offers"],div[itemprop="description"]{ clear:left; display:inline-block; float:left; }
+		div[itemprop="description"]{padding-top:$var_space/2;}
+		.tvlgiao_download_header_infor{padding:0 15px;}
+	}
+}
+%download_thumbnail{
+	position:relative;
+	@extend %effect-moses;
+	img{@include transition;}
+	margin-bottom:($var_space - 5px);
+	.download_icon{
+		position:absolute; 
+		left:0;
+		right:0;
+		text-align:center;
+		top:42%;
+		z-index:10;
+		@include translateY(-42%);
+		@include transform(0.2);
+		@include transform(1);
+		visibility: hidden;
+		width:200px;
+		@include opacity(0);
+		@include transition;
+		.download_content_icon{
+			display:inline-block;
+			text-align:center;
+		}
+		.download_container_audio,.download_container_video{
+			float:left;
+		}
+		
+		
+		.container_product_video{
+			
+		}
+	}/*.download_icon*/
+	&:hover .download_icon{
+		@include opacity(1);
+		visibility: visible;
+		@include transform(1);
+		width:100%;
+	}
+}/*@extend %download_thumbnail*/
+
+%edd_download_title-price{
+	.edd_download_title{
+		font:$h5_font;
+		font-weight:500;
+		margin:0;
+		text-transform:uppercase;
+		color:$main_text6_color;
+		a{ @include changeColor ($main_text6_color, $main_text4_color);}
+		&.title2{
+			float:right;
+			padding-top:8px;
+		}
+	}
+	.edd_price{
+		font:$h3_font;
+		color:$main_text3_color;
+		margin-bottom:0;
+		clear: left;
+	}/*.edd_price*/
+	
+}/*@extend %edd_download_title-price*/
+
+/*===============================================================blog==========*/
+.home .title_gradient,.wp_title_gradient{
+	font:$home_title_font!important;
+}
+h2.vc_custom_heading.wp_title_gradient{
+	text-transform:lowercase!important;
+}
+.title_gradient{
+	font:$home_title_font;
+	background: -webkit-linear-gradient(#b76bcc, #9c8cec);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	text-transform:capitalize!important;
+	letter-spacing:0.3em;
+}
+/*===============================================================home1==========*/
+.main-slideshow.wpb_content_element{ margin-bottom:0;}
+
+.popup_container_video,.popup{
+	background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    outline: medium none !important;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 99;
+	padding-top:30px;
+	text-align:center;
+	.product_video{
+		display:inline-block;
+		position:relative;
+		iframe{
+			@include box-shadow(0 -2px 10px #a3a3a3);
+		}
+		a.close_video{
+			position:absolute;
+			right:0;
+			top:0;
+		}
+	}
+}/*.popup_container_video*/
+
+
+/*NEW IN BOARD==============================================*/
+.edd_downloads_list{
+	display: flex; -webkit-flex-wrap: wrap;  -ms-flex-wrap: wrap;  flex-wrap: wrap;
+	.download_product{
+		display: flex; -webkit-flex-wrap: wrap;  -ms-flex-wrap: wrap;  flex-wrap: wrap;
+		.edd_download{
+			display:inline-block;
+			float:none;
+		}
+	}
+	.download_container_right{
+		width:50%;
+		display: flex; -webkit-flex-wrap: wrap;  -ms-flex-wrap: wrap;  flex-wrap: wrap;
+		.edd_download{
+			width:50%;
+			display:inline-block;
+			float:none;
+		}
+	}
+	.edd_download{
+		width:25%;
+		margin-bottom:$var_space;
+		float:none; display:inline-block;
+		vertical-align:top;
+		&.first_big_one{
+			width:50%;
+			float:left;
+		}
+		@extend %edd_download_title-price;
+		
+		.edd_download_excerpt{
+			font:$general_font;
+			color:$main_text2_color;
+			clear:both;
+		}/*.edd_download_excerpt*/
+		
+		.download_thumbnail{
+			@extend %download_thumbnail;
+		}
+		.edd_download_full_content{
+			clear:both;
+		}
+	} /*.edd_download*/
+}/*.edd_downloads_list*/
+
+
+
+/*OUR BEST SELLERS==============================================*/
+.wp_best_seller.edd_downloads_list{
+	.edd_download{
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3){
+			width:33.3333%;
+		}
+	}
+}/*.wp_best_seller*/
+
+/*OUR SERVICES==============================================*/
+.wd-shortcode-service {
+	.wd-service-icon{
+		float:left;
+		margin-right:$var_space;
+	}
+}
+
+/*SlideShow==============================================*/
+.main-slideshow{
+	.tparrows{
+		width:33px;
+		height:50px;
+		&:before{
+			content:none!important;
+		}
+	}
+	.tp-leftarrow.tparrows{
+		background:url(assets/images/left_slideshow.png) no-repeat;
+		&:hover{
+			@include opacity(0.5);
+		}
+	}
+	.tp-rightarrow.tparrows{
+		background:url(assets/images/right_slideshow.png) no-repeat;
+		&:hover{
+			@include opacity(0.5);
+		}
+	}
+}
+
+.wd-content-download-item-after .download_icon_image{
+	display:none;
+}

@@ -1,0 +1,272 @@
+/**
+ * 4.2 Navigation
+ * ----------------------------------------------------------------------------
+ */
+
+/*.wd-menu-primary*/
+.wd-header-menu{
+	border-bottom:1px solid $header_line_color;
+	padding-bottom:30px;
+	display:inline-block;
+	width:100%;
+}
+.nav{
+	margin: 0 auto;
+    padding-top: ($var_space + 10px); 
+	> ul{ padding-left:0; text-align:center;}
+	ul > li {
+		display: inline-block;
+		text-align:left;
+		/*position: relative;*/
+		a{
+			display: inline-block;
+			padding:($var_space - 5px) ($var_space + 10px); 
+			text-transform:uppercase;
+			background-color: $menu_bg_color;
+			@include transition;
+			font:$menu_font;color:$menu_text_color;
+		}
+		&.page_item_has_children > a:after{
+			position: relative;
+			right: 0;
+			top: 0;
+			margin-top: -6px;
+			margin-left:10px;
+			display: inline-block;
+			@include font-awesome(\f107,14px);
+			color: $menu_text_color;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		&.page_item_has_children{position: relative;
+		
+		}
+		&.page_item_has_children:hover > a:after{color:$menu_hover_text_color;}
+		&:hover	> a{  color:$menu_hover_text_color;	} 
+	}
+	
+	.sub-menu,.children{
+		font:$dropmenu_font;
+		background-color:$dropmenu_bg_color;
+		@include box-shadow(0 -2px 10px #a3a3a3);
+		color:$dropmenu_text_color;
+		padding: 0;
+		margin:0;
+		position: absolute;
+		left: -2px;
+		z-index: 99999;
+		width:240px;
+		height:0px;
+		overflow: hidden;
+		clip:rect(0px, 5000px, 5000px, -5000px);
+		 transition-duration: 0.3s;
+		transition-timing-function: ease-in;
+		opacity:0;
+		color:$dropmenu_text2_color;
+		margin-top:0;
+		padding:0 ($var_space + 10px); 
+		> li{ width:100%;
+			&.page_item_has_children > a:after{
+				color:$dropmenu_text2_color;
+			}
+			> a{
+				width:100%;
+				border-top:1px solid $dropmenu_line;
+				padding-left:0;
+				padding-right:0;
+			}
+			&:first-child > a{border-top:0 none}
+		}
+		li.page_item_has_children > a:after{
+			@include font-awesome(\f105,14px);
+			float:right; top:8px;
+		}
+		ul{
+			border-left: 0;
+			left: 100%;
+			top: 0;
+			
+		}
+	}
+} 
+
+
+.nav ul  li.page_item_has_children:hover > ul {
+	clip: inherit;
+	overflow: inherit;
+	height: auto;
+	opacity:1;
+}
+/**
+ * mobile menu
+ * ----------------------------------------------------------------------------
+ */
+.mobile-menu{ position:relative;
+	.wd-mobile-menu{
+		position:absolute; top:40px; left:0; display:none;
+		width:100%; background-color:$dropmenu_bg_color;z-index:1;
+		@include box-shadow(0 -2px 10px #a3a3a3); 
+		ul{ padding-left:0;
+			> li {
+				display:block;
+				text-align:left;
+				position:relative;
+				border-top:1px solid $dropmenu_line;
+				&:first-child{border-top:0 none}
+				a{
+					display:inline-block;
+					padding:($var_space/2) $var_space; 
+				}
+				i{ padding:15px 5px; cursor:pointer; }
+				.sub-menu li{border-top:0 none; padding-left:$var_space;  }
+			}
+		}
+	}
+}
+/*==========menu horizontal==========*/
+nav.ubermenu-horizontal{
+	margin:0 auto; text-align:center;
+	.ubermenu-nav{display:inline-block!important;
+		li.ubermenu-item-level-0{
+			float:none!important; display:inline-block!important;
+			> a{ 
+				display: inline-block;
+				padding:($var_space - 5px) ($var_space + 10px); 
+				text-transform:uppercase;
+				background-color: $menu_bg_color;
+				@include transition;
+				font:$menu_font;
+				color:$menu_text_color;
+				text-shadow:none!important;
+				&.ubermenu-target:after{padding:0;}
+				span{ 
+						/*padding:0 ($var_space + 10px); */
+						text-transform:none;
+						font:$menu_font;
+						@include transition;
+					}
+			}/*a*/
+			&:hover{	
+				> a{  color:$menu_hover_text_color;
+					span{background-color: $menu_hover_bg_color;	}
+				} 
+			}
+			> ul.ubermenu-submenu{
+				@include box-shadow(0 -2px 10px #a3a3a3);
+				background-color:$dropmenu_bg_color;
+				top:auto; margin-top:0;
+				&.ubermenu-submenu-type-flyout > li {
+						margin:0 ($var_space + 10px);
+				}
+				.ubermenu-item-type-column > .ubermenu-submenu-type-stack > .ubermenu-item-normal:first-child{
+					margin:0;
+				}
+				&.ubermenu-submenu-align-full_width{
+					padding:0 ($var_space - 5px);
+					
+					> li{
+						padding:0 ($var_space - 5px);
+						> a{ }
+						.ubermenu-submenu{
+							width:100%;
+								li.ubermenu-item-has-children{
+								.ubermenu-submenu{
+									border-top:1px solid $dropmenu_line;
+									li{ border-top:0 none;
+										a{@include changeColor ($dropmenu_text2_color, $dropmenu_text_color);}
+									}
+								}
+							}
+						} 
+					}
+				} 
+			}
+			li ul.ubermenu-submenu{margin:20px 0 0;}
+			ul.ubermenu-submenu{
+				font:$menu_font;
+				color:$dropmenu_text2_color;
+				padding: 0;
+				li{
+					border-top:1px solid $dropmenu_line;
+					padding:($var_space - 5px)  0; 
+				
+					min-width:190px;
+					text-align:left;
+					&:first-child{ border-top:0 none;}
+					a{
+						padding:0;
+						text-align:left;
+						@include changeColor ($dropmenu_text_color, $dropmenu_text2_color);
+						font:$menu_font;
+						position:relative;
+						width:100%;
+					}
+					img{@extend %effect-darken;}
+					&:hover > a:before {
+						background-color: $menu_hover_text_color;
+						content:"";
+						position:absolute;
+						left:-30px;
+						top:0;
+						width:2px;
+						height:100%;
+					}
+				}
+				a.menu-shop-now{
+					@include button_addtocart;
+					border-bottom:2px solid $btn1_line_color;
+					color: $btn1_text_color; 
+				}
+				
+				.wd_blog_single{
+					.content_title h3 a{font:$title_font;}
+				}
+
+				.woocommerce .products.grid{ margin:0;
+					> .product{ width:100%; padding:0; margin:0;
+						> div{ margin:0; padding:0;}
+						
+						.wd_product_btn a{ font-size:0; span{ font-size:0; }}
+					}
+				}
+				
+			}/*ul*/
+			&.ubermenu-item-has-children{
+			}
+			
+		}/*li*/
+		
+	}/*.ubermenu-nav*/
+	
+}/*nav.ubermenu-skin-wpdancebootstrap-style01*/
+
+.ubermenu-responsive-toggle-open .fa-bars:before{
+	content:"\f00d";
+}
+
+.mobile-menu{
+	nav.ubermenu{
+		background-color:$dropmenu_bg_color;
+		@include box-shadow(0 -2px 10px #a3a3a3);
+		padding:$var_space/2 0;
+		position:absolute;
+		left:($var_space - 5px); right:($var_space - 5px); top:45px;
+		width:auto;
+		ul,li{
+			width:100%!important; text-align:center; 
+		}
+		ul li{
+			&:first-child{ border-top:0 none;}
+			border-top:1px solid $header_line_color;
+			&.ubermenu-has-submenu-drop > .ubermenu-target:after{
+				position:relative!important; right:($var_space - 5px)!important; top:0!important; 
+				color:$dropmenu_text_color;
+			}
+		}
+	}
+	
+}/*.mobile-menu*/
+
+code.ubermenu-highlight-code{
+	background-color:transparent !important;
+}

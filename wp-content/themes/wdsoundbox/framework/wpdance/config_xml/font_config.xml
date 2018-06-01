@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Name: WP DANCE
+Slug: font_default
+Description: custom font for default.
+-->
+<items_setting>
+	<general>
+		<title>General</title>
+		<section>soundbax_font_font_general_section</section>
+		<description>Custom font site</description>
+		<items>
+			<item>
+				<name>Body Font</name>
+				<slug>soundbax_font_font_body_font</slug>
+				<std>Open Sans</std>
+				<description>Font Default: Open Sans</description>
+				<frontend>
+					<selector_normal>
+					input[type="text"],input[type="email"],input[type="password"],input.edd-input,textarea,form label.edd-label,.wd-tag-post,.wd-meta-post,.wd-comment-form ol.wd-commentlist .comment .comment-text .comment-date,.wd-comment-form #wd-comments #respond #commentform span.label,.wd-comment-form #wd-comments #respond #commentform .comment-message-wrapper span.label, .recent_blogs_horizontal_container.special ul li .rb_row_left,footer.footer aside.widget.widget_recent_post .widget_per_slide li .wd-entry-title a,footer.footer .widget_nav_menu ul li a,footer.footer .widget_subscriptions .subscribe_widget input,footer.footer .widget_subscriptions ,footer.footer .widget_subscriptions .subscribe_widget input,.vc_wp_search .widget_search .searchform input[type="text"],.wd-header-widget-right .wd_content_mini_cart .wd_cart_item .content_item .item_price,.edd_downloads_list .edd_download .edd_download_excerpt,.wd-blog-breadcrumb.breadcrumb_default .blog-slug .woocommerce-breadcrumb,.wd-blog-breadcrumb.breadcrumb_default .blog-slug .woocommerce-breadcrumb,.wd-team-member.style-2 .wd-team-wrapper .wd_member_info .wd_member_role,.wd_price_table.price_style-1 .price_table_inner,.testimonial_tab_container .testimonial_right_tab .wd-byline,.testimonial_tab_container .testimonial_right_tab .wd-author-byline .wd-byline, .wd-testimonial_container .wd-testimonial .wd-info-testimonial .wd-author-byline .wd-byline,.feature_tab_left,.shortcode-features,.shortcode-features .feature_excerpt,html .vc_general.vc_tta.vc_tta-accordion.vc_tta-style-classic .vc_tta-panels .vc_tta-panel .vc_tta-panel-heading h4.vc_tta-panel-title a,html .vc_general.vc_tta.vc_tta-accordion.vc_tta-style-modern .vc_tta-panels .vc_tta-panel .vc_tta-panel-heading h4.vc_tta-panel-title a .vc_tta-controls-icon.vc_tta-controls-icon-plus:before,.contact-info .wpb_wrapper,.wd_shortcode_faq,.wd_shortcode_faq .wd_shortcode_faq__question__content,.error404 .wd-error-404 .wd-page-header .wd-text-title2,html .woocommerce .wd-content-single-product.wd_recently_pro .wp_single_recent_product h2.wd-title,aside.widget.widget_price_filter .price_slider_wrapper .price_slider_amount .price_label,.woocommerce .product .summary form.variations_form .variations_button .quantity input[type="number"],.woocommerce .product .summary form.variations_form td select,html .woocommerce .product .woocommerce-tabs ul.tabs li a,.woocommerce .wd-ralated-product h2.wd-heading-title,.wd-content-download,.wd-content-download .wd-content-download-right .wd-info-content-download span, .wd-content-download .wd-content-download-right .wd-info-content-download p ,html .woocommerce form.woocommerce-ordering select,.tagcloud,aside.widget.widget_price_filter .price_slider_wrapper .price_slider_amount .price_label,.wd-search-post.style-2 form.searchform input[type="text"],footer.footer aside.widget.widget_recent_post .widget_per_slide li .wd-entry-title a,aside.widget.widget_calendar .calendar_wrap table tr td,.woocommerce .products .product > div.wd-item-header > a > span,.wd-header-widget-right.shopping-cart-wrapper .wd_account .login, .wd-header-widget-right.shopping-cart-wrapper li.wd_cart .wd_content_mini_cart
+					</selector_normal>
+					<selector_important>			
+					</selector_important>
+				</frontend>
+			</item>	
+			<item>
+				<name>Title Font</name>
+				<slug>soundbax_font_font_title_font</slug>
+				<std>Montserrat</std>
+				<description>Font Default: Montserrat</description>
+				<frontend>
+					<selector_normal>
+					.entry-header a, .owl-carousel#owl-demo .owl-item .item .content .content_title h3 a, nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu .wd_blog_single .content_title h3 a, .woocommerce-cart .cart_totals .order-total,#edd_checkout_cart tfoot .edd_cart_total, #edd_checkout_form_wrap #edd_final_total_wrap, .title_dot, .title_dot_white, .site-branding, .wd_price_table .price_table_inner ul li.table_title h1,  
+					</selector_normal>
+					<selector_important>
+						
+					</selector_important>
+				</frontend>
+			</item>			
+		</items>
+	</general>
+	<menu>
+		<title>Menu Font Options</title>
+		<section>soundbax_font_font_menu_section</section>
+		<description>Custom font menu</description>
+		<items>
+			<item>
+				<name>Main menu</name>
+				<slug>soundbax_font_menu_main_menu</slug>
+				<std>Montserrat</std>
+				<description>Font Default: Montserrat</description>
+				<frontend>
+					<selector_normal>
+					nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 > a span,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu li a
+					</selector_normal>
+				</frontend>
+			</item>
+			<item>
+				<name>Sub Menu</name>
+				<slug>soundbax_font_menu_sub_menu</slug>
+				<std>Lato</std>
+				<description>Font Default: Lato</description>
+				<frontend>
+					<selector_normal>
+					.widget_nav_menu ul .sub-menu, .widget_nav_menu ul .children, .wd-header-menu ul .sub-menu, .wd-header-menu ul .children
+					</selector_normal>
+				</frontend>
+			</item>
+		</items>
+	</menu>	
+	<product>
+		<title>Product Font Options</title>
+		<section>soundbax_font_font_product_section</section>
+		<description>Custom font product</description>
+		<items>
+			<item>
+				<name>Product Name</name>
+				<slug>soundbax_font_menu_main_product_name</slug>
+				<std>Montserrat</std>
+				<description>Font Default: Montserrat</description>
+				<frontend>
+					<selector_normal>
+					.wd-next-previous-post a.wd-navi-tile, .wd-next-previous-post a.wd-navi-tile span,h5,.pagination,.wp-pagenavi,.woocommerce nav.woocommerce-pagination .page-numbers, .wd-comment-form ol.wd-commentlist .comment .comment-text .comment-author-date, .download_cart .container_header_cart a.header_cart,.download_cart .container_header_cart .edd-cart .edd-cart-item > span.edd-cart-item-title , .wd-header-widget-right, .wd-header-widget-right .wd_content_mini_cart .wd_cart_item .content_item > a, .site-branding a, .site-branding span, .wd_header .wd-header-breadcrumbs, .wd_price_table .price_table_inner ul li.prices .price_in_table > span, .testimonial_tab_container .testimonial_right_tab .wd-author-byline a.title, .wd-testimonial_container .wd-testimonial .wd-info-testimonial .wd-author-byline a.title,.feature_tab_left ul li a,aside.widget ul li a, html .woocommerce .product .woocommerce-tabs .panel #reviews.woocommerce-Reviews #review_form_wrapper h3.comment-reply-title, .shortcode-features .feature_information h3.feature_title a,.edd_downloads_list .edd_download .edd_download_title, .wd-related-wrapper .wd-related-slider .edd_download_title, .wd-related-wrapper .wd-related-product .edd_download_title,.testimonial_tab_container .testimonial_right_tab h3,.downloads_widget h2.widget-title, aside.widget .widget-title,footer.footer .widget-title, footer.footer .widgettitle, footer.footer .wd-title h2, footer.footer aside.widget .widget-title
+					</selector_normal>
+				</frontend>
+			</item>
+			<item>
+				<name>Product Price</name>
+				<slug>soundbax_font_menu_sub_product_price</slug>
+				<std>Open Sans</std>
+				<description>Font Default: Open Sans</description>
+				<frontend>
+					<selector_normal>
+					.edd_downloads_list .edd_download .edd_price, .wd-related-wrapper .wd-related-slider .edd_price, .wd-related-wrapper .wd-related-product .edd_price, .download_cart .container_header_cart .edd-cart .edd-cart-item > span.edd-cart-item-price,.wd-content_item_quote, .wd-content_item_quote p,blockquote, .wd-content-download .wd-content-download-right .single-product-price span
+					</selector_normal>
+				</frontend>
+			</item>
+		</items>
+	</product>	
+</items_setting>

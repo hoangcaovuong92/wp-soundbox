@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Name: WP DANCE
+Slug: color_default
+Description: custom color for default.
+-->
+<items_setting>
+	<general>
+		<title>General</title>
+		<section>soundbax_color_general_section</section>
+		<description>Custom color site</description>
+		<items>
+			<background_item>
+				<name>Background Color</name>
+				<slug>soundbax_general_bg_color</slug>
+				<std>#fff</std>
+				<frontend>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>html,.recent_blogs_horizontal_container.special ul li .special_container_blog,footer.footer .wd-social-icons ul li a:hover i.fa,.wd_price_table .price_table_inner ul li.prices .price_in_table,.wd_price_table.price_style-1 .price_table_inner ul li.table_title,.testimonial_tab_container .testimonial_right_tab, .wd-testimonial_container .wd-testimonial .wd-info-testimonial,.title_img_testimonial,.wd-testimonial_container.style-2 .wd-shortcode-testimonials .wd-avatar,.wd-testimonial_container.style-1 .wd-avatar:before,.wd-testimonial_container .wd-testimonial_title h3,.shortcode-features .wd_feature_style_icon .feature_thumbnail_image a,.wd_shortcode_faq.active,.wd_price_table.price_style-1:before, .wd_price_table.price_style-1:after, .wd_price_table.price_style-1 > div:before, .wd_price_table.price_style-1 > div:after,.funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-body</selector>
+					</f1>
+					<f2>
+						<attribute>border-color</attribute>
+						<selector>.wd-team-member.style-1 .wd_member_info,.wd_price_table.price_style-1 .price_table_inner,.wd-testimonial_container.style-1 .wd-avatar a,.wd-testimonial_container.wd-style-slider .wd-avatar:before</selector>
+					</f2>
+				</frontend>
+			</background_item>
+			
+			<background_item>
+				<name>Background Blog,faq Item</name>
+				<slug>soundbax_general_bg_color3</slug>
+				<std>#f5f5f5</std>
+				<frontend>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>.search .wd-wrap-content-blog, .wd-shortcode-masonry-blog .grid .wd-wrap-content-blog__container, .content_blog.wd-gird-style .wd-load-more-content-blog > div, .content_blog.wd-list-large .wd-load-more-content-blog .wd-wrap-content-blog, .wd-content-single, .wd-related-wrapper .wd-wrap-content-blog__container,.wd_shortcode_faq</selector>
+					</f1>
+					<f2>
+						<attribute>border-color</attribute>
+						<selector>.wd_shortcode_faq</selector>
+					</f2>
+				</frontend>
+			</background_item>
+			
+			<item>
+				<name>Text Color Normal</name>
+				<slug>soundbax_general_text_color</slug>
+				<std>#959595</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>body, body.page ,wd-conent-testimonial,.edd_downloads_list .edd_download .edd_download_excerpt,footer.footer .footer_04 .copyright ,footer.footer .wd-footer-bottom .wd-footer-info,.wd-team-member.style-2 .wd-team-wrapper .wd_member_info .wd_member_role,.wd-team-member.style-3 .wd_member_info .wd_member_role,.wd-team-member.style-6 .wd_member_role,.wd_price_table .price_table_inner,.wd_price_table.price_style-1:hover .price_table_inner,.feature_tab_left,.shortcode-features,.shortcode-features .feature_excerpt,.contact-info .wpb_wrapper,.wd_shortcode_faq,.item-portfolio .portfilio_cats ,.wd-content-download,#edd_checkout_cart .edd_cart_remove_item_btn:before, a.close_video:before, div.close:before, .edd_download_buy_button a.close_option:before,.wd_price_table.price_style-1:before, .wd_price_table.price_style-1:after, .wd_price_table.price_style-1 > div:before, .wd_price_table.price_style-1 > div:after,.pagination a, .pagination span, .wp-pagenavi a, .wp-pagenavi span, .woocommerce nav.woocommerce-pagination .page-numbers a, .woocommerce nav.woocommerce-pagination .page-numbers span,.pagination a.curent-total, .pagination span.curent-total, .wp-pagenavi a.curent-total, .wp-pagenavi span.curent-total, .woocommerce nav.woocommerce-pagination .page-numbers a.curent-total, .woocommerce nav.woocommerce-pagination .page-numbers span.curent-total,.social_icon > div a,.funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab.vc_active a, .funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab:hover a,.funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab a,form label.edd-label,aside.widget.widget_search form.searchform input[type="text"]</selector>
+					</f1>
+					<f2>
+						<attribute>background-color</attribute>
+						<selector>.wd_shortcode_faq a.faq_toggle:after, .wd_shortcode_faq a.faq_toggle:before,.funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-body .vc_toggle .vc_toggle_title i:after, .funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-body .vc_toggle .vc_toggle_title i:before</selector>
+					</f2>
+					<f3>
+						<attribute>border-color</attribute>
+						<selector>.wd_shortcode_faq a.faq_toggle,.funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-body .vc_toggle .vc_toggle_title i</selector>
+					</f3>
+				</frontend>
+			</item>	
+
+			<item>
+				<name>Title - Price Color</name>
+				<slug>soundbax_general_title_color</slug>
+				<std>#212121</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>h1,h2,h3,h4,h5,h6,.wd-header-widget-right .wd_content_mini_cart .wd_cart_item .content_item > a ,.wd-header-widget-right .wd_content_mini_cart .wd_cart_item .content_item .item_price,.wd-header-widget-right .wd_content_mini_cart .footer .total .amount,.site-branding a, .site-branding span,.site-branding .entry-title,footer.footer .wd-social-icons ul li i.fa,.edd_downloads_list .edd_download .edd_price, .wd-related-wrapper .wd-related-slider .edd_price, .wd-related-wrapper .wd-related-product .edd_price,.wd-comment-form ol.wd-commentlist .comment .comment-text .comment-author-date,.wd-comment-form ol.wd-commentlist .comment .comment-text i.fa:hover, .wd-comment-form ol.wd-commentlist .comment .comment-text i.fa:focus, .wd-comment-form ol.wd-commentlist .comment .comment-text i.fa:active,.wd-comment-form #wd-comments #respond #commentform span.label,.wd-comment-form #wd-comments #respond #commentform .comment-message-wrapper span.label,.downloads_widget h2.widget-title, aside.widget .widget-title,aside.widget.widget_price_filter .price_slider_wrapper .price_slider_amount .price_label ,aside.widget.widget_layered_nav li a,aside.widget.wd_widget_recent_onsaleproduct_wrapper.style_02 .product_detail_wd .product_info_wd a h3,aside.widget.widget_search form.searchform button,aside.widget.widget_calendar .calendar_wrap table tr th,.download_cart .container_header_cart .edd-cart .edd-cart-item > span.edd-cart-item-price,.download_cart .container_header_cart .edd-cart .cart_item.edd-cart-meta.edd_total .cart-total,#edd_checkout_cart .edd_cart_header_row ,h2.vc_custom_heading, .wd-content-download .wd-comment-form h3.reply-title,.wd-blog-breadcrumb.breadcrumb_default .title-cotainer-header h3,.wd-team-member.style-5 .wd_member_info h3,.wd-team-member.style-2 .wd-team-wrapper .wd_member_info h3 ,.wd-team-member.style-3 .wd_member_info h3 ,.wd-team-member.style-6 h3,.wd_price_table .price_table_inner:hover .table_title h1,.wd_price_table.price_style-1 .price_table_inner ul li.table_title h1,.testimonial_tab_container .testimonial_right_tab .wd-author-byline a.title, .wd-testimonial_container .wd-testimonial .wd-info-testimonial .wd-author-byline a.title,.wd-testimonial_container .wd-testimonial_title,.shortcode-features .feature_information h3.feature_title a,html .vc_general.vc_tta.vc_tta-accordion.vc_tta-style-outline .vc_tta-panels .vc_tta-panel .vc_tta-panel-heading h4.vc_tta-panel-title a,html .vc_general.vc_tta.vc_tta-accordion.vc_tta-style-modern .vc_tta-panels .vc_tta-panel .vc_tta-panel-heading h4.vc_tta-panel-title a,.contact-info .wpb_wrapper > div b,.wpcf7 .wpcf7-form,html .woocommerce .wd-content-single-product.wd_recently_pro .wp_single_recent_product h2.wd-title,html .woocommerce .wd-content-single-product.wd_additional_left.wd_recently_pro .product .summary form.variations_form .variations_button .label_quantity,.woocommerce .product .summary h1.product_title,.woocommerce .product .summary .availability, .woocommerce .product .summary .wd_product_sku,html .woocommerce .product .woocommerce-tabs ul.tabs li a,html .woocommerce .product .woocommerce-tabs ul.tabs li.active a,html .woocommerce .product .woocommerce-tabs .panel #reviews.woocommerce-Reviews #review_form_wrapper h3.comment-reply-title,html .woocommerce .product .woocommerce-tabs .panel #reviews.woocommerce-Reviews #review_form_wrapper label ,.woocommerce .wd-ralated-product h2.wd-heading-title ,.wd-content-download .wd-content-download-right .single-product-price span,.title_dot, .title_dot_white,.woocommerce-cart .cart_totals h2, .site-content .widget-title,.entry-header a,.pagination a:hover, .pagination a:focus, .pagination a:active, .pagination span:hover, .pagination span:focus, .pagination span:active, .wp-pagenavi a:hover, .wp-pagenavi a:focus, .wp-pagenavi a:active, .wp-pagenavi span:hover, .wp-pagenavi span:focus, .wp-pagenavi span:active, .woocommerce nav.woocommerce-pagination .page-numbers a:hover, .woocommerce nav.woocommerce-pagination .page-numbers a:focus, .woocommerce nav.woocommerce-pagination .page-numbers a:active, .woocommerce nav.woocommerce-pagination .page-numbers span:hover, .woocommerce nav.woocommerce-pagination .page-numbers span:focus, .woocommerce nav.woocommerce-pagination .page-numbers span:active,.pagination a.current, .pagination span.current, .wp-pagenavi a.current, .wp-pagenavi span.current, .woocommerce nav.woocommerce-pagination .page-numbers a.current, .woocommerce nav.woocommerce-pagination .page-numbers span.current,.owl-carousel#owl-demo .owl-item .item .content .wd-url-home a:hover,.funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab.vc_active a:hover, .funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab.vc_active a:focus, .funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab.vc_active a:active, .funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab:hover a:hover, .funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab:hover a:focus, .funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab:hover a:active,.funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-body .vc_toggle .vc_toggle_title h4</selector>
+					</f1>
+					<f2>
+						<attribute>border-color</attribute>
+						<selector>.shortcode-features .wd_feature_style_icon:hover,.wd_shortcode_faq a.faq_toggle.active,.pagination a:hover, .pagination span:hover, .wp-pagenavi a:hover, .wp-pagenavi span:hover, .woocommerce nav.woocommerce-pagination .page-numbers a:hover, .woocommerce nav.woocommerce-pagination .page-numbers span:hover ,.pagination a.current, .pagination span.current, .wp-pagenavi a.current, .wp-pagenavi span.current, .woocommerce nav.woocommerce-pagination .page-numbers a.current, .woocommerce nav.woocommerce-pagination .page-numbers span.current,.owl-carousel#owl-demo .owl-item .item .content .wd-url-home a:hover,.funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab.vc_active, .funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab:hover,.funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-body .vc_toggle.vc_toggle_active i </selector>
+					</f2>
+					<f3>
+						<attribute>background-color</attribute>
+						<selector>.shortcode-features .wd_feature_style_image .feature_information h3.feature_title:before,.wd_shortcode_faq a.faq_toggle.active:before,.wd_feature_style_thumbnail .feature_information .feature_information_wrapper::before,.wd_feature_style_thumbnail .feature_information .feature_information_wrapper::after,.wd_feature_style_thumbnail .feature_information::before,.wd_feature_style_thumbnail .feature_information::after ,.funiture-tab.vc_tta.vc_tta-shape-rounded .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-body .vc_toggle.vc_toggle_active i:before</selector>
+					</f3>
+				</frontend>
+			</item>	
+			<item>
+				<name>Hover Text Color</name>
+				<slug>soundbax_general_hover_text_color</slug>
+				<std>#aa00ff</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>header .header_white nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0:hover > a,.wd-search-post .wd-click-popup-search:hover:before,.search-form .search-submit:hover, .search-form .search-submit:focus, .search-form .search-submit:active,.wd-header-widget-right.shopping-cart-wrapper .wd_account:hover a#login_text,.wd-header-widget-right .wd_content_mini_cart .wd_cart_item .content_item > a:hover, .wd-header-widget-right .wd_content_mini_cart .wd_cart_item .content_item > a:focus, .wd-header-widget-right .wd_content_mini_cart .wd_cart_item .content_item > a:active ,.site-branding a:hover, .site-branding a:focus, .site-branding a:active, .site-branding span:hover, .site-branding span:focus, .site-branding span:active,.header-mobile .wd-header-bottom__menu > div.wd-header-cart .download_cart .container_header_cart a.header_cart span.edd-cart-quantity, .wd-header-menu .pushmenu-left .nav ul li.page_item a:hover, .wd-header-menu .pushmenu-left .nav ul li.page_item a:focus, .wd-header-menu .pushmenu-left .nav ul li.page_item a:active, .wd-header-menu .pushmenu-left .nav ul li.menu-item a:hover, .wd-header-menu .pushmenu-left .nav ul li.menu-item a:focus, .wd-header-menu .pushmenu-left .nav ul li.menu-item a:active, .wd-header-menu .pushmenu-left .mobile-main-menu ul li.page_item a:hover, .wd-header-menu .pushmenu-left .mobile-main-menu ul li.page_item a:focus, .wd-header-menu .pushmenu-left .mobile-main-menu ul li.page_item a:active, .wd-header-menu .pushmenu-left .mobile-main-menu ul li.menu-item a:hover, .wd-header-menu .pushmenu-left .mobile-main-menu ul li.menu-item a:focus, .wd-header-menu .pushmenu-left .mobile-main-menu ul li.menu-item a:active,header .header-mobile i.fa:hover ,.recent_blogs_horizontal_container.special ul li .rb_row_left .rb_row_day:before, .recent_blogs_horizontal_container ul li .rb_row_left:before,footer.footer aside.widget.widget_recent_post .widget_per_slide li .wd-entry-title a:hover, footer.footer aside.widget.widget_recent_post .widget_per_slide li .wd-entry-title a:focus, footer.footer aside.widget.widget_recent_post .widget_per_slide li .wd-entry-title a:active,footer.footer aside.widget.widget_recent_post .widget_per_slide li .wd-date-post:before,footer.footer .widget_nav_menu ul li a:hover, footer.footer .widget_nav_menu ul li a:focus, footer.footer .widget_nav_menu ul li a:active,footer.footer .footer_info i.fa,.edd_downloads_list .edd_download .edd_download_title a:hover, .wd-related-wrapper .wd-related-slider .edd_download_title a:hover, .wd-related-wrapper .wd-related-product .edd_download_title a:hover, .edd_downloads_list .edd_download .edd_download_title a:focus, .wd-related-wrapper .wd-related-slider .edd_download_title a:focus, .wd-related-wrapper .wd-related-product .edd_download_title a:focus, .edd_downloads_list .edd_download .edd_download_title a:active, .wd-related-wrapper .wd-related-slider .edd_download_title a:active, .wd-related-wrapper .wd-related-product .edd_download_title a:active,.wd-title-post h2.wd-heading-title a:hover,.wd_title_respond h3.heading-title a:hover,.wd-title-wrapper h4.entry-title a:hover, .recent_blogs_horizontal_container.special ul li .special_container_blog .special_container_blog__item a:hover, .wd-title-post h2.wd-heading-title a:focus,.wd_title_respond h3.heading-title a:focus,.wd-title-wrapper h4.entry-title a:focus, .recent_blogs_horizontal_container.special ul li .special_container_blog .special_container_blog__item a:focus, .wd-title-post h2.wd-heading-title a:active,.wd_title_respond h3.heading-title a:active,.wd-title-wrapper h4.entry-title a:active, .recent_blogs_horizontal_container.special ul li .special_container_blog .special_container_blog__item a:active,.wd-tag-post:before,.wd-tag-post a:hover,.wd-meta-post .wd-comment-post:before, .recent_blogs_horizontal_container.special ul li .rb_row_left .rb_comment .rb_count_comment:before,.wd-meta-post .wd-date-post:before,.wd-content_item_quote .content_author:hover, .wd-content_item_quote .content_author:focus, .wd-content_item_quote .content_author:active,.wd-content_item_quote .content_author a:hover, .wd-content_item_quote .content_author a:focus, .wd-content_item_quote .content_author a:active,.wd-comment-form ol.wd-commentlist .comment .comment-text i.fa,aside.widget ul li:hover:before ,aside.widget.widget_recent_post .widget_per_slide li .wd-infomation-post .wd-entry-title a:hover, aside.widget.widget_recent_post .widget_per_slide li .wd-infomation-post .wd-entry-title a:focus, aside.widget.widget_recent_post .widget_per_slide li .wd-infomation-post .wd-entry-title a:active,.woocommerce-cart .cart_totals .order-total .amount,.wd-team-member .social-icons ul li a:hover, .wd-team-member .social-icons ul li a:focus, .wd-team-member .social-icons ul li a:active,.wd-team-member.style-1 .wd_member_info .wd_member_role,.wd-team-member.style-4 .wd_member_role,.wd_price_table .price_table_inner ul li.table_title h1,.wd_price_table.price_style-1:hover .price_table_inner .prices,.testimonial_tab_container .testimonial_right_tab .wd-author-byline a.title:hover, .wd-testimonial_container .wd-testimonial .wd-info-testimonial .wd-author-byline a.title:hover, .testimonial_tab_container .testimonial_right_tab .wd-author-byline a.title:focus, .wd-testimonial_container .wd-testimonial .wd-info-testimonial .wd-author-byline a.title:focus, .testimonial_tab_container .testimonial_right_tab .wd-author-byline a.title:active, .wd-testimonial_container .wd-testimonial .wd-info-testimonial .wd-author-byline a.title:active ,.testimonial_tab_container .testimonial_right_tab .wd-author-byline .wd-byline, .wd-testimonial_container .wd-testimonial .wd-info-testimonial .wd-author-byline .wd-byline,.testimonial_tab_container .testimonial_right_tab .wd-byline,.shortcode-features .feature_information h3.feature_title a:hover, .shortcode-features .feature_information h3.feature_title a:focus, .shortcode-features .feature_information h3.feature_title a:active,.wd_shortcode_faq.active .wd_shortcode_faq__question__content,.wd-content-download .wd-content-download-right .wd-title-post h2 a:hover, .wd-content-download .wd-content-download-right .wd-title-post h2 a:focus, .wd-content-download .wd-content-download-right .wd-title-post h2 a:active,.wd-content-download .wd-content-download-right .wd-info-content-download span a, .wd-content-download .wd-content-download-right .wd-info-content-download p a,.title_dot:after, .title_dot:before, .title_dot_white:after, .title_dot_white:before,.entry-header > span,.entry-header a:hover, .entry-header a:focus, .entry-header a:active,.owl-carousel#owl-demo .owl-item .item .content .wd-url-home a,.social_icon > div a:hover, .social_icon > div a:focus, .social_icon > div a:active</selector>
+					</f1>
+					<f2>
+						<attribute>border-color</attribute>
+						<selector>input[type="text"]:hover, input[type="text"]:focus, input[type="text"]:active, input[type="email"]:hover, input[type="email"]:focus, input[type="email"]:active, input[type="password"]:hover, input[type="password"]:focus, input[type="password"]:active,input.edd-input:hover,input.edd-input:focus,input.edd-input:active,textarea:hover,textarea:focus,textarea:active</selector>
+					</f2>
+					<f3>
+						<attribute>border-boder-bottom-color</attribute>
+						<selector>.entry-header > span,.owl-carousel#owl-demo .owl-item .item .content .wd-url-home a </selector>
+					</f3>
+					<f4>
+						<attribute>background-color</attribute>
+						<selector>.download_cart .container_header_cart .edd-cart .edd-cart-item a.edd-remove-from-cart:hover,.shortcode-features .wd_feature_style_image .feature_information h3.feature_title:hover:before ,.woocommerce-cart .cart_totals h2:before, .site-content .widget-title:before</selector>
+					</f4>
+				</frontend>
+			</item>
+			<item>
+				<name>Name Color</name>
+				<slug>soundbax_general_name_color</slug>
+				<std>#424242</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>header .header_white nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 > a,.edd_downloads_list .edd_download .edd_download_title, .wd-related-wrapper .wd-related-slider .edd_download_title, .wd-related-wrapper .wd-related-product .edd_download_title,.edd_downloads_list .edd_download .edd_download_title a, .wd-related-wrapper .wd-related-slider .edd_download_title a, .wd-related-wrapper .wd-related-product .edd_download_title a ,.wd-meta-post,.recent_blogs_horizontal_container.special ul li .rb_row_left,aside.widget ul li a:hover, aside.widget ul li a:focus, aside.widget ul li a:active,aside.widget.widget_product_categories ul.product-categories li.cat-parent:before, aside.widget.widget_product_categories ul.product-categories li.cat-item.cat-parent:before, aside.widget.widget_product_categories ul li.cat-parent:before, aside.widget.widget_product_categories ul li.cat-item.cat-parent:before, aside.widget.widget_categories ul.product-categories li.cat-parent:before, aside.widget.widget_categories ul.product-categories li.cat-item.cat-parent:before, aside.widget.widget_categories ul li.cat-parent:before, aside.widget.widget_categories ul li.cat-item.cat-parent:before,.download_cart .container_header_cart .edd-cart .edd-cart-item > span.edd-cart-item-title,.download_cart .container_header_cart .edd-cart .cart_item.edd-cart-meta.edd_total,.wd_price_table .price_table_inner ul li.prices .price_in_table > span,.wd-content-download .wd-content-download-right .wd-title-post h2,.wd-content-download .wd-content-download-right .wd-title-post h2 a,.wd-content-download .wd-content-download-right .wd-info-content-download span a:hover, .wd-content-download .wd-content-download-right .wd-info-content-download span a:focus, .wd-content-download .wd-content-download-right .wd-info-content-download span a:active, .wd-content-download .wd-content-download-right .wd-info-content-download p a:hover, .wd-content-download .wd-content-download-right .wd-info-content-download p a:focus, .wd-content-download .wd-content-download-right .wd-info-content-download p a:active,input[type="text"]:hover, input[type="text"]:focus, input[type="text"]:active, input[type="email"]:hover, input[type="email"]:focus, input[type="email"]:active, input[type="password"]:hover, input[type="password"]:focus, input[type="password"]:active,input.edd-input:hover,input.edd-input:focus,input.edd-input:active,textarea:hover,textarea:focus,textarea:active,input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder,input.edd-input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,input[type="text"]:-moz-placeholder, input[type="email"]:-moz-placeholder,input[type="password"]:-moz-placeholder,input.edd-input:-moz-placeholder,textarea:-moz-placeholder,input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="password"]::-moz-placeholder,input.edd-input::-moz-placeholder,textarea::-moz-placeholder,input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder,input.edd-input:-ms-input-placeholder,textarea:-ms-input-placeholder</selector>
+					</f1>
+					<f2>
+						<attribute>border-color</attribute>
+						<selector>.wd_price_table .price_table_inner ul li.prices .price_in_table,.testimonial_tab_container .testimonial_right_tab, .wd-testimonial_container .wd-testimonial .wd-info-testimonial </selector>
+					</f2>
+				</frontend>
+			</item>	
+			<item>
+				<name>Text Color 5 (blockquote)</name>
+				<slug>soundbax_general_text_color5</slug>
+				<std>#ffffff</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.header-mobile .wd-header-info,.wd-content_item_quote,.wd-content_item_quote p,.wd-content_item_quote .content_author,.wd-content_item_quote .content_author a,.download_cart .container_header_cart .edd-cart .edd-cart-item a.edd-remove-from-cart:before,.wd-team-member .wd_member_info h3,.wd-team-member.style-1 .wd_member_info h3,.wd_price_table.price_style-1 .price_table_inner,.error404,.error404 .wd-error-404 .wd-page-header h1.wd-page-title ,.error404 .wd-error-404 .wd-page-header .wd-text-title,.woocommerce .products .product > div.wd-item-header > a > span,.title_dot_white,.title_dot_white:after, .title_dot_white:before</selector>
+					</f1>
+					<f2>
+						<attribute>background-color</attribute>
+						<selector>.edd_download_buy_button</selector>
+					</f2>
+					<f3>
+						<attribute>border-color</attribute>
+						<selector></selector>
+					</f3>
+				</frontend>
+			</item>	
+			<item>
+				<name>Primary Color</name>
+				<slug>soundbax_general_primary_color</slug>
+				<std>#cccccc</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>aside.widget.wd_widget_recent_onsaleproduct_wrapper.style_02 .product_detail_wd .product_info_wd a h3:hover, aside.widget.wd_widget_recent_onsaleproduct_wrapper.style_02 .product_detail_wd .product_info_wd a h3:focus, aside.widget.wd_widget_recent_onsaleproduct_wrapper.style_02 .product_detail_wd .product_info_wd a h3:active,aside.widget.widget_recent_post .wd-read-more a,aside.widget.widget_calendar .calendar_wrap table tr #prev a,aside.widget.widget_calendar .calendar_wrap table tr #next a,.ts-dropcap,.wd-team-member.style-4 .wd_member_thumb .wd_member_info--content .wd-member-content,.wd-team-member.style-4 .wd_member_info .wd_member_info--content .wd-member-content,html .vc_general.vc_tta.vc_tta-accordion.vc_tta-style-flat .vc_tta-panels .vc_tta-panel.vc_active .vc_tta-panel-heading h4.vc_tta-panel-title a,.woocommerce .product .summary .review_wrapper a:hover,a:focus, a:hover</selector>
+					</f1>
+					<f2>
+						<attribute>background-color</attribute>
+						<selector>aside.widget.widget_price_filter .price_slider_wrapper .price_slider .ui-slider-range,aside.widget.widget_layered_nav li a:hover,aside.widget.wd_widget_recent_onsaleproduct_wrapper.style_02 .slider_control a:hover,aside.widget.null-instagram-feed .instagram-pics li a:before,aside.widget.widget_calendar .calendar_wrap table tr td:hover,.ts-dropcap.style-2,.wd-team-member.style-3:hover .wd_member_info,html .vc_general.vc_tta.vc_tta-accordion.vc_tta-style-outline .vc_tta-panels .vc_tta-panel.vc_active .vc_tta-panel-heading h4.vc_tta-panel-title a .vc_tta-controls-icon,html .vc_general.vc_tta.vc_tta-accordion.vc_tta-style-modern .vc_tta-panels .vc_tta-panel.vc_active .vc_tta-panel-heading,html .vc_general.vc_tta.vc_tta-accordion.vc_tta-style-modern .vc_tta-panels .vc_tta-panel.vc_active .vc_tta-panel-heading h4.vc_tta-panel-title a .vc_tta-controls-icon,html .vc_general.vc_tta.vc_tta-accordion.vc_tta-style-flat .vc_tta-panels .vc_tta-panel.vc_active .vc_tta-panel-heading h4.vc_tta-panel-title a .vc_tta-controls-icon,.wd-shortcode-brand .owl-controls .owl-nav > div:hover,aside.widget.widget_recent_post .slider_control a:hover, .woocommerce .wd-ralated-product .wd-ralated-content .related_control a:hover,html .woocommerce #content div.product .images .thumbnails .slider_control a:hover,html .woocommerce .product .woocommerce-tabs ul.tabs li:before</selector>
+					</f2>
+					<f3>
+						<attribute>border-bottom-color</attribute>
+						<selector>.wd-team-member.style-3:hover .wd_member_info:after</selector>
+					</f3>
+				</frontend>
+			</item>	
+
+		</items>
+	</general>
+	<header>
+		<title>Custom Color Header</title>
+		<section>soundbax_color_header_section</section>
+		<description>Custom color header</description>
+		<items>
+			<background_item>
+				<name>Header Background Color 1</name>
+				<slug>soundbax_header_bg_color_1</slug>
+				<std>#fff</std>
+				<frontend>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>.site-header</selector>
+					</f1>
+					<f2>
+						<attribute>border-color</attribute>
+						<selector>.wd-header-widget-right.shopping-cart-wrapper li.wd_cart .wd_mini_cart</selector>
+					</f2>
+					<f3>
+						<attribute>border-top-color</attribute>
+						<selector>.mobile-menu nav.ubermenu ul li </selector>
+					</f3>
+					<f4>
+						<attribute>border-bottom-color</attribute>
+						<selector>.wd-header-menu</selector>
+					</f4>
+				</frontend>
+			</background_item>
+			<item>
+				<name>Background Dropdown Cart Color</name>
+				<slug>soundbax_header_cart</slug>
+				<std>#fff</std>
+				<frontend>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>.wd-header-widget-right.shopping-cart-wrapper .wd_account .login, .wd-header-widget-right.shopping-cart-wrapper li.wd_cart .wd_content_mini_cart,.download_cart .container_header_cart .edd-cart</selector>
+					</f1>
+				</frontend>
+			</item>
+			<item>
+				<name>Text Color 1</name>
+				<slug>soundbax_header_text_1</slug>
+				<std>#fefefe</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.wd-search-post .wd-click-popup-search,.wd-search-post.style-2 form.searchform input[type="text"],.wd-search-post.style-2 form.searchform button,.vc_wp_search .widget_search .searchform input[type="text"],.vc_wp_search .widget_search .searchform input[type="text"]::-webkit-input-placeholder,.vc_wp_search .widget_search .searchform input[type="text"]:-moz-placeholder,.vc_wp_search .widget_search .searchform input[type="text"]::-moz-placeholder,.vc_wp_search .widget_search .searchform input[type="text"]:-ms-input-placeholder,.vc_wp_search .widget_search .searchform button,.wd_tini_account_wrapper .wd_tini_account_control a,.wd_tini_account_wrapper.show-icon-user .wd_tini_account_control a,.search-form input,.search-form input::-webkit-input-placeholder,.search-form input:-moz-placeholder,.search-form input::-moz-placeholder ,.search-form input:-ms-input-placeholder,.wd-header-widget-right.shopping-cart-wrapper > ul > li,.wd-header-widget-right.shopping-cart-wrapper > ul > li label,.wd_header .wd-header-title,.wd_header .wd-header-breadcrumbs,.wd_header .wd-header-breadcrumbs a ,.download_cart .container_header_cart a.header_cart</selector>
+					</f1>
+				</frontend>
+			</item>
+			<item>
+				<name>Text Color 2</name>
+				<slug>soundbax_header_text_2</slug>
+				<std>#aa00ff</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.wd_header .wd-header-breadcrumbs a:hover, .wd_header .wd-header-breadcrumbs a:focus, .wd_header .wd-header-breadcrumbs a:active ,.download_cart .container_header_cart:hover a.header_cart</selector>
+					</f1>
+				</frontend>
+			</item>		
+		</items>
+	</header>
+	<footer>
+		<title>Custom Color Footer</title>
+		<section>soundbax_color_footer_section</section>
+		<description>Custom color footer</description>
+		<items>
+			<background_item>
+				<name>Background Color 1</name>
+				<slug>soundbax_footer_bg_color_1</slug>
+				<std>#000000</std>
+				<frontend>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>footer.footer</selector>
+					</f1>
+				</frontend>
+			</background_item>	
+			<background_item>
+				<name>Background Color 2</name>
+				<slug>soundbax_footer_bg_color_2</slug>
+				<std>#212121</std>
+				<frontend>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>footer.footer .wd-footer-bottom,footer.footer .wp_copyright</selector>
+					</f1>
+				</frontend>
+			</background_item>	
+			<item>
+				<name>Border Color</name>
+				<slug>soundbax_footer_border</slug>
+				<std>#616161</std>
+				<frontend>
+					<f1>
+						<attribute>border-color</attribute>
+						<selector>footer.footer .tagcloud a,footer.footer .widget_subscriptions,footer.footer .widget_subscriptions:before</selector>
+					</f1>
+				</frontend>
+			</item>	
+			<item>
+				<name>Text Color 1</name>
+				<slug>soundbax_footer_text_1</slug>
+				<std>#b7b7b7</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>footer.footer,footer.footer aside.widget.widget_recent_post .widget_per_slide li .wd-entry-title a,footer.footer .widget_nav_menu ul li a,footer.footer .widget_subscriptions .newsletter ,footer.footer .footer_info,.recent_blogs_horizontal_container ul li .rb_excerpt</selector>
+					</f1>
+				</frontend>
+			</item>	
+			<item>
+				<name>Text Color 2</name>
+				<slug>soundbax_footer_text_2</slug>
+				<std>#ffffff</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>footer.footer .widget-title, footer.footer .widgettitle, footer.footer .wd-title h2, footer.footer aside.widget .widget-title ,footer.footer .widget_subscriptions</selector>
+					</f1>
+				</frontend>
+			</item>	
+			<item>
+				<name>Text Color 3</name>
+				<slug>soundbax_footer_text_3</slug>
+				<std>#a3a3a3</std>
+				<frontend>
+					<f1>
+						<attribute>Background color</attribute>
+						<selector>#to-top a:before</selector>
+					</f1>
+				</frontend>
+			</item>		
+		</items>
+	</footer>
+	<menu>
+		<title>Menu Color</title>
+		<section>soundbax_color_menu_section</section>
+		<description>Custom color menu</description>
+		<items>
+			<item>
+				<name>Background Color</name>
+				<slug>soundbax_menu_top_bg</slug>
+				<std>transparent</std>
+				<frontend>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>.widget_nav_menu ul li a,.wd-header-menu ul li a,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 > a  </selector>
+					</f1>
+				</frontend>
+			</item>	
+			<item>
+				<name>Hover Background Color</name>
+				<slug>soundbax_menu_hover_top_bg</slug>
+				<std>transparent</std>
+				<frontend>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0:hover > a span</selector>
+					</f1>
+				</frontend>
+			</item>	
+			<item>
+				<name>Dropdown Background Color</name>
+				<slug>soundbax_menu_dropdown_bkg</slug>
+				<std>#ffffff</std>
+				<frontend>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>.widget_nav_menu ul .sub-menu, .widget_nav_menu ul .children,.wd-header-menu ul .sub-menu,.wd-header-menu ul .children,.mobile-menu .wd-mobile-menu,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 > ul.ubermenu-submenu,.mobile-menu nav.ubermenu</selector>
+					</f1>
+				</frontend>
+			</item>	
+			<item>
+				<name>Menu Text Color</name>
+				<slug>soundbax_menu_text</slug>
+				<std>#ffffff</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.widget_nav_menu ul li a,.wd-header-menu ul li a,.widget_nav_menu ul li.page_item_has_children > a:after, .widget_nav_menu ul li.menu-item-has-children > a:after,.wd-header-menu ul li.page_item_has_children > a:after,.wd-header-menu ul li.menu-item-has-children > a:after,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 > a</selector>
+					</f1>
+				</frontend>
+			</item>	
+			<item>
+				<name>Menu Text Hover Color</name>
+				<slug>soundbax_menu_text_hover</slug>
+				<std>#aa00ff</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.widget_nav_menu ul li.page_item_has_children:hover > a:after, .widget_nav_menu ul li.menu-item-has-children:hover > a:after,.wd-header-menu ul li.page_item_has_children:hover > a:after,.wd-header-menu ul li.menu-item-has-children:hover > a:after ,.widget_nav_menu ul li:hover > a,.wd-header-menu ul li:hover > a,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0:hover > a,</selector>
+					</f1>
+					<f2>
+						<attribute>Background color</attribute>
+						<selector>.widget_nav_menu ul .sub-menu li:hover > a:before, .widget_nav_menu ul .children li:hover > a:before,.wd-header-menu ul .sub-menu li:hover > a:before,.wd-header-menu ul .children li:hover > a:before,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu li:hover > a:before</selector>
+					</f2>
+				</frontend>
+			</item>	
+			<item>
+				<name>Menu Dropdown Text Color</name>
+				<slug>soundbax_menu_dropdown_text</slug>
+				<std>#424242</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.widget_nav_menu ul .sub-menu li a, .widget_nav_menu ul .children li a,.wd-header-menu ul .sub-menu li a,.wd-header-menu ul .children li a,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 > ul.ubermenu-submenu.ubermenu-submenu-align-full_width > li .ubermenu-submenu li.ubermenu-item-has-children .ubermenu-submenu li a:hover, nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 > ul.ubermenu-submenu.ubermenu-submenu-align-full_width > li .ubermenu-submenu li.ubermenu-item-has-children .ubermenu-submenu li a:focus, nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 > ul.ubermenu-submenu.ubermenu-submenu-align-full_width > li .ubermenu-submenu li.ubermenu-item-has-children .ubermenu-submenu li a:active,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu li a,.mobile-menu nav.ubermenu ul li.ubermenu-has-submenu-drop > .ubermenu-target:after,.tvlgiao_download_header_infor</selector>
+					</f1>
+				</frontend>
+			</item>	
+			<item>
+				<name>Menu Hover Dropdown Text Color</name>
+				<slug>soundbax_menu_hover_dropdown_text</slug>
+				<std>#757575</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.widget_nav_menu ul .sub-menu, .widget_nav_menu ul .children,.wd-header-menu ul .sub-menu,.wd-header-menu ul .children,.widget_nav_menu ul .sub-menu li a:hover, .widget_nav_menu ul .sub-menu li a:focus,.widget_nav_menu ul .sub-menu li a:active, .widget_nav_menu ul .children li a:hover, .widget_nav_menu ul .children li a:focus, .widget_nav_menu ul .children li a:active,.wd-header-menu ul .sub-menu li a:hover,.wd-header-menu ul .sub-menu li a:focus,.wd-header-menu ul .sub-menu li a:active,.wd-header-menu ul .children li a:hover,.wd-header-menu ul .children li a:focus,.wd-header-menu ul .children li a:active,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 > ul.ubermenu-submenu.ubermenu-submenu-align-full_width > li .ubermenu-submenu li.ubermenu-item-has-children .ubermenu-submenu li a ,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu li a:hover, nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu li a:focus, nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu li a:active</selector>
+					</f1>
+				</frontend>
+			</item>	
+			<item>
+				<name>Menu Dropdown Border Color</name>
+				<slug>soundbax_menu_line_dropdown_text</slug>
+				<std>#ebebeb</std>
+				<frontend>
+					<f1>
+						<attribute>Border Top color</attribute>
+						<selector>.widget_nav_menu ul .sub-menu li, .widget_nav_menu ul .children li,.wd-header-menu ul .sub-menu li,.wd-header-menu ul .children li,.nav-menu .sub-menu > li, .nav-menu .children > li,.mobile-menu .wd-mobile-menu ul > li,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 > ul.ubermenu-submenu.ubermenu-submenu-align-full_width > li .ubermenu-submenu li.ubermenu-item-has-children .ubermenu-submenu,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu li </selector>
+					</f1>
+					<f2>
+						<attribute>Border Bottom color</attribute>
+						<selector>.wd-header-widget-right .wd_content_mini_cart .wd_cart_item</selector>
+					</f2>
+				</frontend>
+			</item>	
+		</items>
+	</menu>	
+	<button>
+		<title>Button Primary Color</title>
+		<section>soundbax_color_button_section</section>
+		<description>Custom color button</description>
+		<items>			
+			<item>
+				<name>Button Background 1</name>
+				<slug>soundbax_bg_button_1</slug>
+				<std>#212121</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.woocommerce a.added_to_cart:hover:before,.woocommerce a.compare.button:hover:before,.woocommerce .yith-wcwl-add-to-wishlist a.add_to_wishlist.button.alt:hover:before, .woocommerce .yith-wcwl-add-to-wishlist .show a:hover:before,.woocommerce a.wd_quickshop_handler:hover:before,a.download_icon_audio:hover:before ,a.download_icon_pause:hover:before,a.download_icon_video:hover:before,a.download_icon_image:hover:before,a.price_option:hover:before</selector>
+					</f1>
+					<f2>
+						<attribute>border-color</attribute>
+						<selector>.edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option,.wd_price_table.price_style-1 .price_table_inner ul li.price_button a.button,.wpcf7 .wpcf7-form input[type="submit"],.error404 .wd-error-404 a.button,.wd-content-download .wd-comment-form button#submit,button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern,.edd_download_buy_button a.button </selector>
+					</f2>
+					<f3>
+						<attribute>background-color</attribute>
+						<selector>nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu a.menu-shop-now:hover, nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu a.menu-shop-now:focus, nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu a.menu-shop-now:active,.edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option,.woocommerce-cart .cart_totals a.checkout-button:before,.woocommerce-checkout #payment #place_order:before, .woocommerce-checkout .woocommerce-page #payment #place_order:before,.download_cart .container_header_cart .edd-cart .cart_item.edd_checkout > a:before,.download_cart .container_header_cart .edd-cart .cart_item.edd_checkout > a:before,.wd-team-member.style-7 .wd_member_info,.wd-team-member.style-2 .wd-team-wrapper .wd_member_thumb .social-icons,.wd-team-member.style-4,.wd_price_table.price_style-1:hover .price_table_inner .table_title h1,.wd_price_table.price_style-1 .price_table_inner ul li.price_button a.button,.wd-testimonial_container.wd-style-slider .owl-controls .owl-nav > div,.feature_tab_left ul li,.contact-info .wpb_wrapper i.fa:before,.wpcf7 .wpcf7-form input[type="submit"],.error404 .wd-error-404 a.button,.woocommerce .product .summary form.variations_form .button_single_product_wpdance button:before,.wd-content-download .wd-comment-form button#submit,.woocommerce a.button:before, .woocommerce button.button:before,.woocommerce #respond input#submit:hover, .woocommerce input.button:hover, input#edd-purchase-button:hover,button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern,.woocommerce a.added_to_cart,.woocommerce a.compare.button,.woocommerce .yith-wcwl-add-to-wishlist a.add_to_wishlist.button.alt, .woocommerce .yith-wcwl-add-to-wishlist .show a ,.woocommerce a.wd_quickshop_handler,.wd_add_to_cart .wd_btn_add_to_cart a.add_to_cart_button:hover, .wd_add_to_cart .wd_btn_add_to_cart a.add_to_cart_button:focus, .wd_add_to_cart .wd_btn_add_to_cart a.add_to_cart_button:active,a.button:before, .woocommerce a.button:before,.button-comming a:before,.button_line:hover, .button_line:focus, .button_line:active,.button_line-black:hover, .button_line-black:focus, .button_line-black:active,a.download_icon_audio,a.download_icon_pause,a.download_icon_video,a.download_icon_image,a.price_option,.edd_download_buy_button a.button,.navigation span.current, .navigation span:hover, .navigation span:focus, .navigation a.current, .navigation a:hover, .navigation a:focus, .wd-pagination span.current, .wd-pagination span:hover, .wd-pagination span:focus, .wd-pagination a.current, .wd-pagination a:hover, .wd-pagination a:focus</selector>
+					</f3>
+					<f4>
+						<attribute>border-bottom-color</attribute>
+						<selector>nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu a.menu-shop-now</selector>
+					</f4>	
+				</frontend>
+			</item>	
+			<item>
+				<name>Button Color 1</name>
+				<slug>soundbax_color_button_1</slug>
+				<std>#ffffff</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.wd-header-menu .pushmenu-left .nav ul li.page_item a, .wd-header-menu .pushmenu-left .nav ul li.menu-item a, .wd-header-menu .pushmenu-left .mobile-main-menu ul li.page_item a, .wd-header-menu .pushmenu-left .mobile-main-menu ul li.menu-item a,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu a.menu-shop-now,nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu a.menu-shop-now:hover, nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu a.menu-shop-now:focus, nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu a.menu-shop-now:active,.main-content aside.widget.widget_search form.searchform button:hover i ,.edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option,.woocommerce-cart .cart_totals a.checkout-button:hover, .woocommerce-cart .cart_totals a.checkout-button:focus, .woocommerce-cart .cart_totals a.checkout-button:active,.woocommerce-checkout #payment #place_order:hover, .woocommerce-checkout #payment #place_order:focus, .woocommerce-checkout #payment #place_order:active, .woocommerce-checkout .woocommerce-page #payment #place_order:hover, .woocommerce-checkout .woocommerce-page #payment #place_order:focus, .woocommerce-checkout .woocommerce-page #payment #place_order:active,.download_cart .container_header_cart .edd-cart .cart_item.edd_checkout > a:hover, .download_cart .container_header_cart .edd-cart .cart_item.edd_checkout > a:focus, .download_cart .container_header_cart .edd-cart .cart_item.edd_checkout > a:active,.download_cart .container_header_cart .edd-cart .cart_item.edd_checkout > a:hover, .download_cart .container_header_cart .edd-cart .cart_item.edd_checkout > a:focus, .download_cart .container_header_cart .edd-cart .cart_item.edd_checkout > a:active,.wd-team-member.style-7 .wd_member_info h3,.wd_price_table.price_style-1:hover .price_table_inner .table_title h1,.wd_price_table.price_style-1 .price_table_inner ul li.price_button a.button,.wd-testimonial_container.wd-style-slider .owl-controls .owl-nav > div,.shortcode-features .wd_feature_style_icon .feature_thumbnail_image a .fa,.contact-info .wpb_wrapper i.fa:before,.wpcf7 .wpcf7-form input[type="submit"],.error404 .wd-error-404 a.button,.woocommerce .product .summary form.variations_form .button_single_product_wpdance button:hover, .woocommerce .product .summary form.variations_form .button_single_product_wpdance button:focus, .woocommerce .product .summary form.variations_form .button_single_product_wpdance button:active,.wd-content-download .wd-comment-form button#submit,button:hover, button:focus, button:active,.woocommerce a.button:hover,.woocommerce a.button:focus,.woocommerce a.button:active, .woocommerce button.button:hover, .woocommerce button.button:focus, .woocommerce button.button:active,input[type="submit"]:hover,input[type="button"]:hover,input[type="reset"]:hover,.woocommerce #respond input#submit:hover, .woocommerce input.button:hover, input#edd-purchase-button:hover,.woocommerce a.added_to_cart:before,.woocommerce a.compare.button:before,.woocommerce .yith-wcwl-add-to-wishlist a.add_to_wishlist.button.alt:before, .woocommerce .yith-wcwl-add-to-wishlist .show a:before,.woocommerce a.wd_quickshop_handler:before,.wd_add_to_cart .wd_btn_add_to_cart a.add_to_cart_button:hover, .wd_add_to_cart .wd_btn_add_to_cart a.add_to_cart_button:focus, .wd_add_to_cart .wd_btn_add_to_cart a.add_to_cart_button:active,a.button:hover, a.button:focus, a.button:active, .woocommerce a.button:hover, .woocommerce a.button:focus, .woocommerce a.button:active,.button-comming a:hover, .button-comming a:focus, .button-comming a:active,.button_line:hover, .button_line:focus, .button_line:active,.button_line-black:hover, .button_line-black:focus, .button_line-black:active,a.download_icon_audio:before,a.download_icon_pause:before , a.download_icon_image:before,a.price_option:before ,.edd_download_buy_button a.button, .navigation span:hover, .navigation span:focus, .navigation span:active, .navigation a:hover, .navigation a:focus, .navigation a:active, .wd-pagination span:hover, .wd-pagination span:focus, .wd-pagination span:active, .wd-pagination a:hover, .wd-pagination a:focus, .wd-pagination a:active,.navigation span.current, .navigation span:hover, .navigation span:focus, .navigation a.current, .navigation a:hover, .navigation a:focus, .wd-pagination span.current, .wd-pagination span:hover, .wd-pagination span:focus, .wd-pagination a.current, .wd-pagination a:hover, .wd-pagination a:focus,.navigation span.current.next:before, .navigation span.current.prev:before, .navigation span.current.previous:before, .navigation span.current.last:before, .navigation span.current.first:before, .navigation span:hover.next:before, .navigation span:hover.prev:before, .navigation span:hover.previous:before, .navigation span:hover.last:before, .navigation span:hover.first:before, .navigation span:focus.next:before, .navigation span:focus.prev:before, .navigation span:focus.previous:before, .navigation span:focus.last:before, .navigation span:focus.first:before, .navigation a.current.next:before, .navigation a.current.prev:before, .navigation a.current.previous:before, .navigation a.current.last:before, .navigation a.current.first:before, .navigation a:hover.next:before, .navigation a:hover.prev:before, .navigation a:hover.previous:before, .navigation a:hover.last:before, .navigation a:hover.first:before, .navigation a:focus.next:before, .navigation a:focus.prev:before, .navigation a:focus.previous:before, .navigation a:focus.last:before, .navigation a:focus.first:before, .wd-pagination span.current.next:before, .wd-pagination span.current.prev:before, .wd-pagination span.current.previous:before, .wd-pagination span.current.last:before, .wd-pagination span.current.first:before, .wd-pagination span:hover.next:before, .wd-pagination span:hover.prev:before, .wd-pagination span:hover.previous:before, .wd-pagination span:hover.last:before, .wd-pagination span:hover.first:before, .wd-pagination span:focus.next:before, .wd-pagination span:focus.prev:before, .wd-pagination span:focus.previous:before, .wd-pagination span:focus.last:before, .wd-pagination span:focus.first:before, .wd-pagination a.current.next:before, .wd-pagination a.current.prev:before, .wd-pagination a.current.previous:before, .wd-pagination a.current.last:before, .wd-pagination a.current.first:before, .wd-pagination a:hover.next:before, .wd-pagination a:hover.prev:before, .wd-pagination a:hover.previous:before, .wd-pagination a:hover.last:before, .wd-pagination a:hover.first:before, .wd-pagination a:focus.next:before, .wd-pagination a:focus.prev:before, .wd-pagination a:focus.previous:before, .wd-pagination a:focus.last:before, .wd-pagination a:focus.first:before,.container-porfolio-slider .owl-controls .owl-nav a:before, .wd-related-wrapper .related_control a:before, .container-porfolio-slider .owl-controls .owl-nav > div:before, .wd-related-wrapper .related_control > div:before</selector>
+					</f1>
+					<f2>
+						<attribute>background-color</attribute>
+						<selector>.woocommerce a.added_to_cart:hover,.woocommerce a.compare.button:hover,.woocommerce .yith-wcwl-add-to-wishlist a.add_to_wishlist.button.alt:hover, .woocommerce .yith-wcwl-add-to-wishlist .show a:hover,.woocommerce a.wd_quickshop_handler:hover,a.download_icon_audio:hover,a.download_icon_pause:hover,a.download_icon_video:hover ,a.download_icon_image:hover,a.price_option:hover</selector>
+					</f2>
+				</frontend>
+			</item>	
+			<item>
+				<name>Button Background 2</name>
+				<slug>soundbax_bg_button_2</slug>
+				<std>#aa00ff</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.button_line-black ,#edd_checkout_cart .edd_cart_remove_item_btn:hover:before, a.close_video:hover:before, div.close:hover:before, .edd_download_buy_button a.close_option:hover:before</selector>
+					</f1>
+					<f2>
+						<attribute>background-color</attribute>
+						<selector>nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu a.menu-shop-now,aside.widget ul.download_tag li a:before, .tagcloud a:before,.edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option:before,.woocommerce-cart .cart_totals a.checkout-button ,.woocommerce-checkout #payment #place_order, .woocommerce-checkout .woocommerce-page #payment #place_order,.download_cart .container_header_cart .edd-cart .cart_item.edd_checkout > a ,.wd_price_table .price_table_inner ul li.price_button a.button:before ,.wd_price_table.price_style-1 .price_table_inner ul li.price_button a.button:before,.wd-testimonial_container.wd-style-slider .owl-controls .owl-nav > div:hover ,.feature_tab_left ul li:hover, .feature_tab_left ul li.active, .feature_tab_left ul li:focus ,.contact-info .wpb_wrapper:hover i.fa:before, .contact-info .wpb_wrapper:focus i.fa:before, .contact-info .wpb_wrapper:active i.fa:before,.wpcf7 .wpcf7-form input[type="submit"]:before,.error404 .wd-error-404 a.button:before,.woocommerce .product .summary form.variations_form .button_single_product_wpdance button ,.wd-content-download .wd-content-download-right .wd-content-download-item-after a.button:before,.wd-content-download .wd-comment-form button#submit:before,button,.woocommerce a.button, .woocommerce button.button,input[type="submit"],input[type="button"],input[type="reset"],.woocommerce #respond input#submit, .woocommerce input.button, input#edd-purchase-button,button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:before,.wd_add_to_cart .wd_btn_add_to_cart a.add_to_cart_button ,a.button, .woocommerce a.button,.button-comming a ,.button_line,.button_line-black,.edd_download_buy_button a.button:before, a.readmore_link:before, a.readmore_link:hover, a.readmore_link:focus, a.readmore_link:active, a.btn_loadmore_blog:hover, a.btn_loadmore_blog:focus, a.btn_loadmore_blog:active,.wd-next-previous-post a.wd-navi-tile:before</selector>
+					</f2>
+					<f3>
+						<attribute>border-color</attribute>
+						<selector>.edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option:before,.edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option:hover, .edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option:focus, .edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option:active,.wd_price_table .price_table_inner:hover,.wd_price_table .price_table_inner ul li.price_button a.button:hover, .wd_price_table .price_table_inner ul li.price_button a.button:focus, .wd_price_table .price_table_inner ul li.price_button a.button:active,.wd_price_table.price_style-1 .price_table_inner ul li.price_button a.button:hover, .wd_price_table.price_style-1 .price_table_inner ul li.price_button a.button:focus, .wd_price_table.price_style-1 .price_table_inner ul li.price_button a.button:active,.wpcf7 .wpcf7-form input[type="submit"]:before ,.wpcf7 .wpcf7-form input[type="submit"]:hover, .wpcf7 .wpcf7-form input[type="submit"]:focus, .wpcf7 .wpcf7-form input[type="submit"]:active,.error404 .wd-error-404 a.button:before ,.error404 .wd-error-404 a.button:hover, .error404 .wd-error-404 a.button:focus, .error404 .wd-error-404 a.button:active,.wd-content-download .wd-content-download-right .wd-content-download-item-after a.button:before,.wd-content-download .wd-content-download-right .wd-content-download-item-after a.button:hover, .wd-content-download .wd-content-download-right .wd-content-download-item-after a.button:focus, .wd-content-download .wd-content-download-right .wd-content-download-item-after a.button:active ,.wd-content-download .wd-comment-form button#submit:before,.wd-content-download .wd-comment-form button#submit:hover, .wd-content-download .wd-comment-form button#submit:focus, .wd-content-download .wd-comment-form button#submit:active,button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:before,button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:hover, button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:focus, button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:active..edd_download_buy_button a.button:before,.edd_download_buy_button a.button:hover, .edd_download_buy_button a.button:focus, .edd_download_buy_button a.button:active,  .wd-next-previous-post a.wd-navi-tile:hover, .wd-next-previous-post a.wd-navi-tile:focus, .wd-next-previous-post a.wd-navi-tile:active</selector>
+					</f3>
+				</frontend>
+			</item>	
+			<item>
+				<name>Button Color 2</name>
+				<slug>soundbax_color_button_2</slug>
+				<std>#ffffff</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>nav.ubermenu-horizontal .ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu a.menu-shop-now,aside.widget ul.download_tag li a:hover, .tagcloud a:hover, aside.widget ul.download_tag li a:focus, .tagcloud a:focus, aside.widget ul.download_tag li a:active, .tagcloud a:active,.woocommerce-cart .cart_totals a.checkout-button,.woocommerce-checkout #payment #place_order, .woocommerce-checkout .woocommerce-page #payment #place_order,.download_cart .container_header_cart .edd-cart .cart_item.edd_checkout > a,.wd_price_table .price_table_inner ul li.price_button a.button:hover, .wd_price_table .price_table_inner ul li.price_button a.button:focus, .wd_price_table .price_table_inner ul li.price_button a.button:active,.wd_price_table.price_style-1 .price_table_inner ul li.price_button a.button:hover, .wd_price_table.price_style-1 .price_table_inner ul li.price_button a.button:focus, .wd_price_table.price_style-1 .price_table_inner ul li.price_button a.button:active,.wd-testimonial_container.style-1 .wd-testimonial .wd-info-testimonial,.wd-testimonial_container.style-1 .wd-testimonial .wd-info-testimonial .wd-author-byline a.title, .wd-testimonial_container.style-1 .wd-testimonial .wd-info-testimonial .wd-author-byline .wd-byline,.feature_tab_left ul li:hover a, .feature_tab_left ul li.active a, .feature_tab_left ul li:focus a,.woocommerce .product .summary form.variations_form .button_single_product_wpdance button,button,.woocommerce a.button, .woocommerce button.button,input[type="submit"],input[type="button"],input[type="reset"],.woocommerce #respond input#submit, .woocommerce input.button, input#edd-purchase-button,.wd_add_to_cart .wd_btn_add_to_cart a.add_to_cart_button,a.button, .woocommerce a.button,.button-comming a,.button_line,.button_line-black,a.readmore_link:hover, a.readmore_link:focus, a.readmore_link:active, a.btn_loadmore_blog:hover, a.btn_loadmore_blog:focus, a.btn_loadmore_blog:active,.wd-next-previous-post a.wd-navi-tile:hover, .wd-next-previous-post a.wd-navi-tile:focus, .wd-next-previous-post a.wd-navi-tile:active</selector>
+					</f1>
+				</frontend>
+			</item>	
+			<item>
+				<name>Button Background 4</name>
+				<slug>soundbax_bg_button_4</slug>
+				<std>#000000</std>
+				<frontend>
+					<f1>
+						<attribute>border-color</attribute>
+						<selector>.btn_2line button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern,.wpcf7 .wpcf7-form input[type="submit"]:hover,.btn_2line button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:hover:before, .btn_2line button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:focus:before, .btn_2line button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:active:before ,a.btn_loadmore_blog:hover, a.btn_loadmore_blog:focus, a.btn_loadmore_blog:active</selector>
+					</f1>
+					<f2>
+						<attribute>background-color</attribute>
+						<selector>.wpcf7 .wpcf7-form input[type="submit"]:hover,.btn_2line button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern</selector>
+					</f2>
+				</frontend>
+			</item>	
+			<item>
+				<name>Button Color 4</name>
+				<slug>soundbax_color_button_4</slug>
+				<std>#ffffff</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>.edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option:hover, .edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option:focus, .edd_downloads_list.list .edd_download .edd_download_inner .download_icon_list a.price_option:active,.wpcf7 .wpcf7-form input[type="submit"]:hover, .wpcf7 .wpcf7-form input[type="submit"]:focus, .wpcf7 .wpcf7-form input[type="submit"]:active,.error404 .wd-error-404 a.button:hover, .error404 .wd-error-404 a.button:focus, .error404 .wd-error-404 a.button:active, .wd-content-download .wd-comment-form button#submit:hover, .wd-content-download .wd-comment-form button#submit:focus, .wd-content-download .wd-comment-form button#submit:active,button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:hover, button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:focus, button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:active,.btn_2line button.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern,.edd_download_buy_button a.button:hover, .edd_download_buy_button a.button:focus, .edd_download_buy_button a.button:active, a.btn_loadmore_blog</selector>
+					</f1>
+				</frontend>
+			</item>
+			<item>
+				<name>Button Background 5</name>
+				<slug>soundbax_bg_button_5</slug>
+				<std>transparent</std>
+				<frontend>
+					<f1>
+						<attribute>background-color</attribute>
+						<selector>aside.widget ul.download_tag li a, .tagcloud a</selector>
+					</f1>
+				</frontend>
+			</item>
+			<item>
+				<name>Button Color 5</name>
+				<slug>soundbax_color_button_5</slug>
+				<std>#757575</std>
+				<frontend>
+					<f1>
+						<attribute>color</attribute>
+						<selector>aside.widget ul.download_tag li a, .tagcloud a,a.readmore_link</selector>
+					</f1>
+				</frontend>
+			</item>
+			<item>
+				<name>Button Border Color 5</name>
+				<slug>soundbax_line_button_5</slug>
+				<std>#e7e7e7</std>
+				<frontend>
+					<f1>
+						<attribute>border-color</attribute>
+						<selector>aside.widget ul.download_tag li a, .tagcloud a</selector>
+					</f1>
+				</frontend>
+			</item>
+		</items>
+	</button>
+</items_setting>

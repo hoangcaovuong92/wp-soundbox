@@ -1,0 +1,117 @@
+body.rtl{
+	.pull-left {
+		float: right !important;
+	}
+	.pull-right {
+		float: left !important;
+	}
+	/*home*/
+	.download_cart .container_header_cart .edd-cart .edd-cart-item{
+		text-align:right;
+		> div{
+			float:right;
+			margin-right:0;
+			margin-left:$var_space;
+		}
+		& a.edd-remove-from-cart{ left:0; right:auto;}
+	} 
+	.wd-popup-search.show .searchform button,.header-mobile .wd-header-bottom__menu > div.mobile-seach .searchform button{ left:0; right:auto;}
+	.header-mobile .wd-header-bottom__menu > div.mobile-seach .searchform input[type="text"]{
+		padding-left:$var_space + 10px;
+		padding-right:$var_space/4
+	}
+	.ubermenu-items-align-left.ubermenu-horizontal{
+		text-align:center;
+		.ubermenu-nav li.ubermenu-item-level-0 ul.ubermenu-submenu li{
+			text-align:right;
+			a{text-align:right;}
+			&:hover > a:before{
+				left:auto;
+				right:-30px;
+			}
+		}
+	}
+	.wd-testimonial_container {
+		.wd-testimonial_title{ text-align:left;	margin:0 60px 40px 0;}
+		&.wd-style-slider .wd-avatar{ float:right; margin-right:0; margin-left:50px;}
+		.wd-info-testimonial{ width:50%;}
+		&.style-2 {
+			.wd-shortcode-testimonials .wd-avatar a{ left: auto; right:15px;}
+			&:hover .wd-shortcode-testimonials .wd-avatar a{left: auto; right:-5px;}
+		}
+	}
+	.testimonial_tab_container{
+		.testimonial_tab_left{ float:right; padding-right:0; padding-left:30px;}
+	}
+	.wd-team-member{
+		&.style-4 .wd_member_thumb, &.style-4 .wd_member_info,.social-icons{
+			float:right;
+		}	
+	}
+	.edd_downloads_list .edd_download .edd_download_title.title2, .wd-related-wrapper .wd-related-slider .edd_download_title.title2, .wd-related-wrapper .wd-related-product .edd_download_title.title2{
+		float:left;
+	}
+	.shortcode-features .wd_feature_style_image {
+		.feature_thumbnail_image{ float:right;}
+		.feature_information{ text-align:right; padding-left:0; padding-right:$var_space*2;
+			h3.feature_title:before{ left:auto; right: -($var_space);}
+		}
+		
+	}
+	.feature_tab_left,.contact-info .wpb_wrapper i.fa{
+		float:right;
+		margin-right:0;
+		margin-left:$var_space;
+	}
+	.feature_right_tab{
+		padding-left:0;
+		padding-right:$var_space/2;
+		.feature_right_tab__container{ float:right;
+			padding-right:0;
+			padding-left:$var_space + 10px;
+		}
+	}
+	footer.footer{
+		.widget-title,.wd-title h2,aside.widget .widget-title,
+		.widget_nav_menu ul li,.widget_recent_post ul li{ text-align:right;padding-right:0;}
+		aside.widget.widget_recent_post .widget_per_slide li .wd-date-post{ float:right;}
+	}
+	.downloads_widget .edd_download_inner .edd_download_image, aside.widget.wd_widget_recent_onsaleproduct_wrapper.style_02 .product_detail_wd .product_thumbnail_wd, aside.widget.widget_recent_post .widget_per_slide li .wd-thumbnail-post	{
+		float:right;
+		margin-right:0;
+		margin-left:$var_space + 10px;
+	}
+	.vc_custom_1475469072695{ padding-left:100px !important; padding-right:0!important}
+	h2.vc_custom_heading.text_rtl{ text-align:right!important;}
+	
+	.wd-content-blog .wd-thumbnail-post, .wd-content-single .wd-thumbnail-post, .wd-related-wrapper .wd-wrap-content-blog__container .wd-thumbnail-post{
+		left:auto;right:-10px
+	}
+	.content_blog.wd-list-large .wd-load-more-content-blog .wd-wrap-content-blog .wd-thumbnail-post, .content_blog.wd-list-large .wd-load-more-content-blog .wd-wrap-content-blog .slider, .content_blog.wd-list-large .wd-load-more-content-blog .wd-wrap-content-blog .wd-video, .content_blog.wd-list-large .wd-load-more-content-blog .wd-wrap-content-blog .wd-audio,
+	.wd-content-single article .wd-tag-post,a.download_icon_audio{
+		float:right;
+	}
+	.wd-comment-form ol.wd-commentlist .comment{
+		.comment-author{
+			float:right;
+			margin:-20px -20px 0 0;
+		}
+		.comment-text{
+			padding:25px 100px 25px 25px;
+		}
+	
+	}
+	aside.widget ul{
+		li{&
+			:before{ left:auto; right:0; }
+			padding-left:0;
+			padding-right:25px;
+		}
+		&.download_tag li{ padding-right:0; float:right;}
+	}
+	.wd-testimonial_container .owl-item{
+		position:relative;
+	}
+}	
+html .rtl.woocommerce-account .woocommerce-MyAccount-navigation{float:right;}
+html .rtl.woocommerce-account .woocommerce-MyAccount-content{float:left; padding-left:0; padding-right:30px;}

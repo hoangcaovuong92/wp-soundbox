@@ -1,0 +1,411 @@
+@mixin changeColor ($color, $color-hover){
+	color: $color;
+	&:hover,
+	&:focus,
+	&:active {color: $color-hover;text-decoration:none;}
+}
+
+@mixin hideText() {
+    font-size:0; 
+ 	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	vertical-align: middle;
+	text-align: left;
+}//@include hideText();
+
+@mixin wp_table{
+	display:table; 
+	vertical-align:middle; 
+	width:100%;
+	margin:0;
+} 
+
+@mixin wp_tablecell{
+	display:table-cell; 
+	vertical-align:middle; 
+	float:none;
+} 
+
+@mixin changeIcon($width, $height, $animal, $bkg-position){
+	width:$width;
+	height:$height;
+	background-image: url('../images/#{$animal}.png');
+	background-position:$bkg-position;
+	background-repeat:no-repeat;
+}
+
+@mixin transition{
+	-moz-transition: all 300ms ease;
+	-webkit-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+@mixin transition_opacity{
+	transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    transition: opacity 1s, transform 1s, -webkit-transform 1s
+}
+
+@mixin transition2{
+	-o-transition: 0.4s cubic-bezier(0.18, 0.74, 0.72, 1);
+	-webkit-transition: 0.4s cubic-bezier(0.18, 0.74, 0.72, 1);
+	-moz-transition: 0.4s cubic-bezier(0.18, 0.74, 0.72, 1);
+	transition: 0.4s cubic-bezier(0.18, 0.74, 0.72, 1);	
+}
+
+@mixin translateY($y){
+	-webkit-transform: translateY($y);
+	-moz-transform: translateY($y);
+	-ms-transform: translateY($y);
+	transform: translateY($y);
+	-o-transform: translateY($y);
+}
+@mixin translateX($x){
+	-webkit-transform: translateX($x);
+	-moz-transform: translateX($x);
+	-ms-transform: translateX($x);
+	transform: translateX($x);
+	-o-transform: translateX($x);
+}
+@mixin translate($x,$y){
+	-webkit-transform: translate($x,$y);
+	-moz-transform: translate($x,$y);
+	-ms-transform: translate($x,$y);
+	-o-transform: translate($x,$y);
+	transformscale: translate($x,$y);
+}
+@mixin transform($y){
+	-webkit-transform: scale($y);
+	-moz-transform: scale($y);
+	-ms-transform: scale($y);
+	-o-transform: scale($y);
+	transform: scale($y);
+}
+@mixin transformscale($x,$y){
+	-webkit-transform: scale($x,$y);
+	-moz-transform: scale($x,$y);
+	-ms-transform: scale($x,$y);
+	-o-transform: scale($x,$y);
+	transformscale: scale($x,$y);
+}
+
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {//0 -2px 10px #a3a3a3;
+  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: #{alpha(opacity=$opacity-ie)}; 
+}
+
+@mixin font-awesome($font,$font-size){
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	/*content:"#{$font}";
+	font-size:$font-size;*/
+	
+	/* $withslash: "\"\\#{$font}\"";
+	content: unquote($withslash);*/
+ 
+	content: unquote(str_insert("''", $font, 2));
+	font-size: $font-size;
+	
+}
+
+@mixin font-dashicons($font,$font-size){
+	display: inline-block;
+	font-family: dashicons;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	content : "#{$font}"; 
+	font-size:$font-size;
+}
+
+@mixin text-link(){
+	display:inline;
+    float:left;
+    ul,ol{
+        margin:0;
+		padding:0;
+        display:inline;
+        li{
+            margin:0 0px $var_space/2;
+			padding:0 $var_space/2;
+			float:none;
+			position:relative;
+			display:block;
+			text-align:center;
+			a{
+				color:$footer_text3_color;
+				 @include transition;
+				&:hover{color:$footer_text4_color;}
+			}
+			.sub-menu{ padding-left:$var_space/2;}
+        }
+    }	
+}
+
+/*=====Button Icon=====*/
+
+@mixin wp_button($bg,$border,$color,$font,$bg2,$border2,$color2){
+	background:$bg;
+	border:1px solid $border;
+	color: $color;
+	font:$font;
+	text-transform:uppercase;
+	display: inline-block;
+	padding: 13px ($var_space - 2px);
+	text-decoration: none; 
+	@include border-radius(0);
+	letter-spacing:0.5em;
+	@extend %hvr-shutter-out-horizontal ;
+	&:before {
+		background:$bg2;
+	}
+	&:hover,&:focus,&:active{
+		color: $color2;
+		border-color:$border2;
+		outline: none;  
+	}
+}
+@mixin button{//add to cart(shop)
+	background:$btn2_bg_color;
+	border:none;
+	color: $btn2_text_color;
+	font:$btn2_font;
+	text-transform:uppercase;
+	display: inline-block;
+	padding: 13px ($var_space - 2px);
+	text-decoration: none; 
+	@include border-radius(0);
+	letter-spacing:0.5em;
+	@extend %hvr-shutter-out-horizontal ;
+	&:before {
+		background:$btn1_bg_color;
+	}
+	&:hover,&:focus,&:active{
+		color: $btn1_text_color;
+		outline: none;  
+	}
+}
+@mixin btn_2line{
+	background:$btn4_bg_color;
+	border:2px solid $btn4_bg_color;
+	color: $btn4_text_color;
+	font:$btn4_font;
+	text-transform:uppercase;
+	display: inline-block;
+	padding: 13px ($var_space - 2px);
+	text-decoration: none; 
+	@include transition;
+	@include border-radius(0);
+	letter-spacing:0.5em;
+	position:relative;
+	min-height:50px;
+	/*min-width:190px;*/
+	margin-bottom:10px;
+	&:hover,&:focus,&:active{
+		background:rgba(0, 0, 0, 0.8);
+		border:2px solid rgba(0, 0, 0, 0.8);
+		color:#fff;
+		outline: none;  
+		&:before{
+			border:2px solid $btn4_line_color;
+			background-color:transparent;
+			content:"";
+			width: auto;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			margin: 0;
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+			bottom: -9px;
+			right: -9px;
+			height: auto;
+		}
+	}
+}
+
+@mixin button_nav{
+	background:$btn2_bg_color;
+	border:0 none;
+	color: $btn2_text_color; 
+	white-space:nowrap;
+	text-transform:uppercase;
+	padding:$var_space/2 ($var_space - 2px);
+	@include border-radius($rounded_corner);
+	@include transition;
+	font:$btn2_font;
+	&:hover{
+		background:$btn1_bg_color;
+		color: $btn1_text_color; 
+	}
+} 
+
+@mixin button_icon($font,$font-size){ /*product hover*/
+	@include border-radius(0);
+	font-size:0;
+	padding:13px;
+	margin:$var_space/4;
+	float:left;
+	text-align:center;
+	background-color:$btn1_bg_color;
+	min-width:65px;
+	padding:15px 0;
+	@include transition;
+	&:before{
+		@include font-awesome($font,$font-size);
+		letter-spacing:1px;
+		color:$btn1_text_color;
+	}
+	&:hover{
+		background-color:$btn1_text_color;
+		&:before{
+			color:$btn1_bg_color;
+		}
+	}
+}
+@mixin button_icon_grid{
+	border:1px solid $btn4_line_color;
+	color: $btn4_text_color; 
+	background:$btn4_bg_color;
+	&:hover{
+		background:$btn_hover;
+		border:1px solid $btn_hover;
+		color:$btn4_bg_color;
+	}
+}
+@mixin button_addtocart{//product hover
+	background:$btn2_bg_color;
+	border:none;
+	color: $btn2_text_color;
+	font:$btn2_font;
+	text-transform:uppercase;
+	display: inline-block;
+	padding: 13px $var_space;
+	text-decoration: none; 
+	@include transition;
+	@include border-radius(3px);
+	&:hover,&:focus,&:active{
+		background:$btn1_bg_color;
+		color: $btn1_text_color;
+		outline: none;  
+	}
+}
+
+@mixin line_title($color1, $color2){
+	color:$color1;
+	border-bottom:2px solid $color1;
+	padding-bottom:2px;
+	text-transform:uppercase;
+	font:$h6_font;
+	@include transition;
+	&:hover{ color:$color2; border-color:$color2;}
+}
+
+@mixin cut_height($height){
+	height:$height;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+%title_productname{
+	font:400 14px/1.75 'HelvetiCaneue', Helvetica, Arial, sans-serif;
+	@include changeColor(#3f3f3f, $colorPrimary);
+	text-transform:uppercase;
+}	
+
+%effect_image{
+	position:relative;
+	overflow:hidden;
+	&:before{
+	    position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		-webkit-transition: all 500ms ease-in;
+		-o-transition: all 500ms ease-in;
+		transition: all 500ms ease-in;
+		background: rgba(0, 0, 0, 0.1);
+	}
+	img{
+		-webkit-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+		-o-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+		transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+		-webkit-transform-origin: 0% 50%;
+		-moz-transform-origin: 0% 50%;
+		-ms-transform-origin: 0% 50%;
+		-o-transform-origin: 0% 50%;
+		transform-origin: 0% 50%;
+		backface-visibility: hidden;
+	}
+	&:hover{
+		img{
+		-webkit-transform: scale(2, 2) translateX(-20%);
+		-ms-transform: scale(2, 2) translateX(-20%);
+		-o-transform: scale(2, 2) translateX(-20%);
+		transform: scale(2, 2) translateX(-20%);
+		}
+		&:before{
+			background: rgba(0, 0, 0, 0.3);
+		}
+	}
+}
+
+
+/*
+@include hideText();text-indent:0;
+@include wp_table;
+@include wp_tablecell;
+@include transition;
+@include transition_opacity;
+@include transition2;
+@include translateY($y);
+@include translateX($x);
+@include transform($y)
+@include transformscale($x,$y);
+
+@include border-radius($rounded_corner);
+@include box-shadow(0 -2px 10px #a3a3a3);
+@include font-awesome(\f13e,14px);
+@include font-dashicons("\f13e",14px);
+
+@include text-link();
+@include line_title($color1, $color2);
+
+@include button_addtocart;
+@include button;
+@include button3_4;
+
+@include button_icon();
+@include button_icon_grid();
+@include opacity(0);
+@include changeColor ($color, $color-hover);
+
+@include cut_height($height);
+@include  
+wp_button($btn5_bg_color,$btn5_line_color,$btn5_text_color,$btn5_font,$btn2_bg_color,$btn2_line_color,$btn2_text_color);
+*/
